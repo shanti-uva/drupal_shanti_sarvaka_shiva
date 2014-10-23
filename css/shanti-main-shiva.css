@@ -1,0 +1,10 @@
+
+/** Shiva Sarvaka Styles **/
+	
+/** Corrections needed to main styles **/
+
+.main-content header ul.tabs.secondary {
+	bottom: -13px;
+}
+
+/** End Corrections to main styles **/

@@ -1,6 +1,15 @@
 
 /** Shiva Sarvaka Styles **/
-	
-/** Corrections needed to main styles **/
-
-/** End Corrections to main styles **/
+/* custom theme colors */
+.titlearea {background: #7EB822; } 
+.basebg { background-color: #7EB822; } 
+.basecolor { color: #7EB822; }   
+ul.ss-full-tabs>li.active>a:after {
+  border-color: #7EB822;
+  border-top-color: #7EB822;
+} 
+i.thumbtype { background-color: rgba(126,184,34, 0.8); }
+.breadwrap ol li .icon{ background:#7EB822;}
+.ss-full-tabs.nav-tabs>li.active,
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#7EB822;}
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#7EB822;}

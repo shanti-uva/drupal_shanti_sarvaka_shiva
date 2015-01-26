@@ -1,15 +1,15 @@
 
 /** Shiva Sarvaka Styles **/
-/* custom theme colors */
-.titlearea {background: #7EB822; } 
-.basebg { background-color: #7EB822; } 
-.basecolor { color: #7EB822; }   
+/* custom theme colors */ /* #7EB822*/
+.titlearea {background: #486b01; } 
+.basebg { background-color: #486b01; } 
+.basecolor { color: #486b01; }   
 ul.ss-full-tabs>li.active>a:after {
-  border-color: #7EB822;
-  border-top-color: #7EB822;
+  border-color: #486b01;
+  border-top-color: #486b01;
 } 
-i.thumbtype { background-color: rgba(126,184,34, 0.8); }
-.breadwrap ol li .icon{ background:#7EB822;}
+i.thumbtype { background-color: rgba(72,107,1, 0.8); }
+.breadwrap ol li .icon{ background:#486b01;}
 .ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#7EB822;}
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#7EB822;}
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#486b01;}
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#486b01;}

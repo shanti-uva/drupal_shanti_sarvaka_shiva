@@ -13,3 +13,29 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#486b01;}
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#486b01;}
+
+/* facet blocks */
+div.block-facetapi:after {
+	border-top: thin solid #a0a0a0;
+	width: 60%;
+	display: block;
+	content: " ";
+	margin-left: 10%;
+}
+div.block-facetapi h4 { font-size: 1.5rem; margin-top: 12px;}
+ul.facetapi-facetapi-links { margin: 6px 0px 6px; padding-left: 2px;}
+ul.facetapi-facetapi-links li.leaf {
+	list-style-type: none;
+	list-style-image: none;
+	padding: 0px;
+	font-size: 1.3rem;
+}
+div.block-facetapi a.facetapi-limit-link {
+	font-size: 1.2rem;
+	text-align: right;
+	width: 70%;
+	display: block;
+	color: #9399c7;
+	margin: -6px 0px 3px;
+}
+div.block-facetapi a.facetapi-limit-link:hover { color: #454fa4; }

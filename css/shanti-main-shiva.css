@@ -93,3 +93,7 @@ body.page-node-share.lightbox-processed {
 #sharetabs .tab-pane p {
 	margin-top: 8px;
 }
+
+#sharetabs .tab-pane .stButton span {
+	min-height: 22px !important;
+}

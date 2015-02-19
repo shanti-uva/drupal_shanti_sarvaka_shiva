@@ -106,10 +106,14 @@
 										title="Share this visualization!" onclick=""><span>Share This<br/>Visualization</span></a></button>
 				</td>
 			</table>
-			<ul>
-				<li><?php print render($content['shivanode_element_type']); ?></li>
-				<li><?php print $user->name; ?></li>
-				<li><?php print date('M j, Y', $created); ?></li>
+			<ul class="shivanode-info">
+				<li><span class="icon shanticon-visuals" title="Visualization Type"></span> 
+					<?php 
+						print render($content['shivanode_element_type']);
+						if(!empty($content['shivanode_subtype']))  { print " (" . render($content['shivanode_subtype']) . ")";  }
+					?> </li>
+				<li><span class="icon shanticon-agents" title="Author"></span> <?php print $user->name; ?></li>
+				<li><span class="icon shanticon-calendar" title="Date Created"></span> <?php print date('M j, Y', $created); ?></li>
 			</ul>
 		</div>
 	</div>

@@ -43,6 +43,13 @@ div.block-facetapi a.facetapi-limit-link:hover { color: #454fa4; }
 .btn.btn-icon.shivanode-btn span:last-child { line-height: 1.5em; }
 .btn.btn-icon.shivanode-btn a.sharelink {color: white;}
 
+ul.shivanode-info li {
+	list-style-type: none;
+	margin-bottom: 6px;
+}
+ul.shivanode-info li .icon {display: inline-block; padding-right: 12px;}
+ul.shivanode-info li div { display: inline-block; }
+
 /* Share window tabs*/
 .content-resources{padding-left:0;padding-right:0;padding-top:0;margin-left:-1.5rem;margin-right: 2.5rem;max-width:16em;background:#fff;min-height:700px;height:100%;background-image:-webkit-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-moz-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-ms-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-o-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);}
 .content-resources .nav-pills{font-weight:bold;text-transform:uppercase;margin:0;}

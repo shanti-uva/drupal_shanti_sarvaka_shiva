@@ -112,7 +112,14 @@
 						print render($content['shivanode_element_type']);
 						if(!empty($content['shivanode_subtype']))  { print " (" . render($content['shivanode_subtype']) . ")";  }
 					?> </li>
-				<li><span class="icon shanticon-agents" title="Author"></span> <?php print $name; ?></li>
+				<li><span class="icon shanticon-agents" title="Author"></span> <?php
+					$uurl = url('user/' . $uid . '/');
+					$creator = user_load($uid);
+					if(!empty($creator->field_lname)) {
+						 print "<a href=\"$uurl\">{$creator->field_fname['und'][0]['safe_value']} {$creator->field_lname['und'][0]['safe_value']}</a>"; 
+					} else {
+						print $name;
+					}?></li>
 				<li><span class="icon shanticon-calendar" title="Date Created"></span> <?php print date('M j, Y', $created); ?></li>
 			</ul>
 		</div>

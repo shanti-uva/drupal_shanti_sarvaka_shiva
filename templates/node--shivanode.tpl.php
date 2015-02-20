@@ -81,22 +81,26 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-	<?php //dpm($content);?>
 	<?php
 		// We hide the comments and links now so that we can render them later.
 		hide($content['comments']);
 		hide($content['links']);
 	?>
   <div class="content row"<?php print $content_attributes; ?>>
-		<div class="visualization col-xs-12 col-sm-9 col-lg-8">
+		<div class="visualization col-xs-12 col-sm-8">
 			<?php print render($content['shivanode_json']); ?>
 		</div>
 		
-		<div class="vis-sidebar col-xs-12 col-sm-3 col-lg-4">
+		<div class="vis-sidebar col-xs-12 col-sm-4">
 			<table>
-				<td><form action="/node/<?php print $node->nid; ?>/edit">
+				<td>
+					<?php if($can_edit): ?>
+						<form action="/node/<?php print $node->nid; ?>/edit">
 							<button class="btn-block btn btn-primary form-submit btn-icon shivanode-btn" type="submit" id="edit-submit--1">
-								<span class="icon shanticon-editor"></span> <span>Edit This<br/>Visualization</span></button></form>
+								<span class="icon shanticon-editor"></span> <span>Edit This<br/>Visualization</span>
+							</button>
+						</form>
+					<?php endif; ?>
 				</td>
 				<td>
 							<button class="btn-block btn btn-primary form-submit btn-icon shivanode-btn" type="submit" id="edit-submit--1">

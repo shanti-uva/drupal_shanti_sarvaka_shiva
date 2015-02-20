@@ -11,5 +11,5 @@
 		return;
 	} else {
 		include_once(drupal_get_path('theme', 'shanti_sarvaka') . '/templates/page.tpl.php');
-	} ?>
+	}
 ?>

@@ -20,3 +20,4 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 		$vars['can_edit'] = TRUE;
 	}
 }
+

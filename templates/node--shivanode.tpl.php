@@ -87,12 +87,12 @@
 		hide($content['links']);
 	?>
   <div class="content row"<?php print $content_attributes; ?>>
-		<div class="visualization col-xs-12 col-sm-8">
+		<div class="visualization col-md-12 col-lg-10">
 			<?php print render($content['shivanode_json']); ?>
 		</div>
 		
-		<div class="vis-sidebar col-xs-12 col-sm-4">
-			<table>
+		<div class="vis-sidebar col-md-12 col-lg-2">
+		<!--	<table>
 				<td>
 					<?php if($can_edit): ?>
 						<form action="/node/<?php print $node->nid; ?>/edit">
@@ -109,7 +109,7 @@
 										rel="lightframe[|width:800px; height:450px; scrolling: no;]" 
 										title="Share this visualization!" onclick=""><span>Share This<br/>Visualization</span></a></button>
 				</td>
-			</table>
+			</table>-->
 			<ul class="shivanode-info">
 				<li><span class="icon shanticon-visuals" title="Visualization Type"></span> 
 					<?php 
@@ -125,6 +125,12 @@
 						print $name;
 					}?></li>
 				<li><span class="icon shanticon-calendar" title="Date Created"></span> <?php print date('M j, Y', $created); ?></li>
+				<li><a href="/node/<?php print $node->nid; ?>/share?format=simple&amp;class=lightbox" 
+										class="sharelink"
+										rel="lightframe[|width:800px; height:450px; scrolling: no;]" 
+										title="Share this visualization!" onclick=""><button class="btn-block btn btn-primary form-submit btn-icon" type="submit" id="edit-submit--1" name="op" value="Share this Visualization">
+					<span class="icon shanticon-share"></span> <span>Share</span></button></a>
+				</li>
 			</ul>
 		</div>
 	</div>

@@ -87,11 +87,11 @@
 		hide($content['links']);
 	?>
   <div class="content row"<?php print $content_attributes; ?>>
-		<div class="visualization col-md-12 col-lg-10">
+		<div class="visualization col-md-12 col-lg-9">
 			<?php print render($content['shivanode_json']); ?>
 		</div>
 		
-		<div class="vis-sidebar col-md-12 col-lg-2">
+		<div class="vis-sidebar col-md-12 col-lg-3">
 		<!--	<table>
 				<td>
 					<?php if($can_edit): ?>

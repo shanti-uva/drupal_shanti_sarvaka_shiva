@@ -1,7 +1,5 @@
 
 /** Shiva Sarvaka Styles **/
-/* custom theme colors */ /* #7EB822*/
-.titlearea {background: #486b01; } 
 .basebg { background-color: #486b01; } 
 .basecolor { color: #486b01; }   
 ul.ss-full-tabs>li.active>a:after {
@@ -13,6 +11,30 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#486b01;}
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#486b01;}
+
+/** Custom Colors (styles taken from MB and color values changed for Shiva) **/
+.titlearea,
+.carousel-control,
+.breadcrumb .icon,
+.nav-justified>li.active a,
+.nav-justified>li.active a:hover,
+.nav-justified>li.active a:active{ background-color:#486b01 !important;}
+.nav-justified>li.active::before{ color:#486b01 !important;}
+/* darker shades below are used to better define details */
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
+.main-content .selectpicker .caret::before,
+.view-section .nav-tabs>li.active>a, 
+.view-section .nav-tabs>li.active>a:hover, 
+.view-section .nav-tabs>li.active>a:active,
+.view-section .fancytree-container .glyphicon,
+.view-section .fancytree-container .fancytree-node:hover > .glyphicon,
+.view-section .fancytree-container .fancytree-node:active > .glyphicon,
+.view-section .fancytree-node.fancytree-active > .glyphicon,
+.view-section .fancytree-node.fancytree-selected > .glyphicon{ color:rgb(72,107,1) !important; }
+.view-section .nav-tabs>li.active>a, 
+.view-section .nav-tabs>li.active>a:hover, 
+.view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
 
 /* facet blocks */
 div.block-facetapi:after {

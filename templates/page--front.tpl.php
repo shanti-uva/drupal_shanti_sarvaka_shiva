@@ -109,10 +109,10 @@
 				        <!-- Tab panes -->
 				        <div class="tab-content">
 				          <div class="tab-pane active" id="allvis">
-				          	<?php print $page['allvis']['#markup']; ?>
+				          	<?php if(!empty($page['allvis'])) { print $page['allvis']['#markup']; } ?>
 				          </div>
 				          <div class="tab-pane" id="myvis">
-				          	<?php print $page['myvis']['#markup']; ?>
+				          	<?php if(!empty($page['myvis']))  { print $page['myvis']['#markup']; } ?>
 				          </div>
 				        </div>
 				      </div>

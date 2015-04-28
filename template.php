@@ -49,26 +49,16 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 }
 
 /**
- * Implements theme_field
- * 	Uses code from theme_field but adds Iframe with showing the data. Currently only shows when it's a google doc. 
+ * Implements theme_field for shivadata_source_url
+ * 	Gives link to open in separate window followed by Iframe with showing the data. 
+ * 	Currently only shows when it's a google doc. 
  * 
  * 	TODO: Need to account for other types of datasource than google docs
  */
 function sarvaka_shiva_field__shivadata_source_url($variables) {
+	$url = $variables['element'][0]['#markup'];
   $output = '';
-
-  // Render the label, if it's not hidden.
-  if (!$variables ['label_hidden']) {
-    $output .= '<div class="field-label"' . $variables ['title_attributes'] . '>' . $variables ['label'] . ':&nbsp;</div>';
-  }
-
-  // Render the items.
-  $output .= '<div class="field-items"' . $variables ['content_attributes'] . '>';
-  foreach ($variables ['items'] as $delta => $item) {
-    $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
-    $output .= '<div class="' . $classes . '"' . $variables ['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
-  }
-  $output .= '</div>';
+  $output .= '<div class="outlink"><a href="' . $url . '" target="_blank">' . t("View in separate window") . '</a></div>';
 	$output .= '<div class="shivaframe"><iframe id="shivaDataFrame" src="' . $variables['element'][0]['#markup']. '" frameborder="0" ' .
 		'style="width: 98% !important; min-height: 1000px;"> </iframe></div>';
   // Render the top-level DIV.

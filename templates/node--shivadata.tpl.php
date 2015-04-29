@@ -112,6 +112,8 @@
 							<?php endforeach; ?>
 						</ul>
 					</li>
+				<?php else: ?>
+					<li><span class="sndata-links">Not used in a visualization</span></li>
 				<?php endif; ?>
 			</ul>
 		</div>

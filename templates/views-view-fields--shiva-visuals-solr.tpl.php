@@ -36,7 +36,7 @@
           <span class="icon"></span>
        </span>-->
        <?php print $fields['field_image']->content;  ?>
-       <!--<span class="icon shanticon-visuals"></span>-->
+       <span class="icon shanticon-visuals"></span>
     </a>
   </div>
   <div class="shanti-thumbnail-info">

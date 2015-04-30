@@ -35,8 +35,14 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
+.shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.8); }
+/** End of Custom Colors **/
+	
+/** Thumbnails **/
+.shanti-field-agent span::before{font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
+.shanti-thumbnail-field .shanti-field-content a { display: inline; }
 
-/* facet blocks */
+/** Facet Blocks **/
 div.block-facetapi:after {
 	border-top: thin solid #a0a0a0;
 	width: 60%;

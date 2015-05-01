@@ -42,6 +42,25 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .shanti-field-agent span::before{font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
 .shanti-thumbnail-field .shanti-field-content a { display: inline; }
 
+/** Explore Thumbs **/
+.page-explore li.shanti-thumbnail {
+  margin: 6px 8px 25px;
+  height: 230px;
+  font-size: 1.75rem;
+}
+
+.page-explore li.shanti-thumbnail .title {
+	font-weight: bold;
+}
+
+.page-explore li.shanti-thumbnail .links {
+	padding: 6px;
+}
+
+.page-explore li.shanti-thumbnail .links li {
+  list-style-type: none;
+}
+
 /** Facet Blocks **/
 div.block-facetapi:after {
 	border-top: thin solid #a0a0a0;

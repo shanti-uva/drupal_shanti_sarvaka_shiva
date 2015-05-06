@@ -45,8 +45,16 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 /** Explore Thumbs **/
 .page-explore li.shanti-thumbnail {
   margin: 6px 8px 25px;
-  height: 230px;
+  height: 200px;
   font-size: 1.75rem;
+}
+
+.page-explore li.shanti-thumbnail .shanti-thumbnail-image {
+	height: 11rem;
+}
+
+.page-explore li.shanti-thumbnail .shanti-thumbnail-image img {
+	height: auto;
 }
 
 .page-explore li.shanti-thumbnail .title {

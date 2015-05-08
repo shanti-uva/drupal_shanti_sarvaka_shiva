@@ -1,5 +1,8 @@
-
 /** Shiva Sarvaka Styles **/
+
+
+/***** Custom Colors *******/
+/** Old Color Styles **/
 .basebg { background-color: #486b01; } 
 .basecolor { color: #486b01; }   
 ul.ss-full-tabs>li.active>a:after {
@@ -12,7 +15,8 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#486b01;}
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#486b01;}
 
-/** Custom Colors (styles taken from MB and color values changed for Shiva) **/
+/** Newer color styles **/
+	  /* (styles taken from MB and color values changed for Shiva)  */
 .titlearea,
 .carousel-control,
 .breadcrumb .icon,
@@ -20,7 +24,7 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active{ background-color:#486b01 !important;}
 .nav-justified>li.active::before{ color:#486b01 !important;}
-/* darker shades below are used to better define details */
+    /* darker shades below are used to better define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
 .main-content .selectpicker .caret::before,
@@ -36,13 +40,13 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
 .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.8); }
-/** End of Custom Colors **/
+/**** End of Custom Colors ****/
 	
-/** Thumbnails **/
+/**** Thumbnails ****/
 .shanti-field-agent span::before{font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
 .shanti-thumbnail-field .shanti-field-content a { display: inline; }
 
-/** Explore Thumbs **/
+/**** Explore Thumbs ****/
 .page-explore li.shanti-thumbnail {
   margin: 6px 8px 25px;
   height: 200px;
@@ -69,7 +73,7 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
   list-style-type: none;
 }
 
-/** Facet Blocks **/
+/**** Facet Blocks ****/
 div.block-facetapi:after {
 	border-top: thin solid #a0a0a0;
 	width: 60%;
@@ -105,8 +109,15 @@ ul.shivanode-info li {
 ul.shivanode-info li .icon {display: inline-block; padding-right: 12px;}
 ul.shivanode-info li div { display: inline-block; }
 
-/* Share window tabs*/
-.content-resources{padding-left:0;padding-right:0;padding-top:0;margin-left:-1.5rem;margin-right: 2.5rem;max-width:16em;background:#fff;min-height:700px;height:100%;background-image:-webkit-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-moz-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-ms-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:-o-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);background-image:linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);}
+/**** Share window tabs ****/
+.content-resources{padding-left:0;padding-right:0;padding-top:0;margin-left:-1.5rem;margin-right: 2.5rem;max-width:16em;
+	background:#fff;min-height:700px;height:100%;
+	background-image:-webkit-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
+	background-image:-moz-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
+	background-image:-ms-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
+	background-image:-o-linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
+	background-image:linear-gradient(left,#ccc 0,#ccc 9px,#fff 10px);
+}
 .content-resources .nav-pills{font-weight:bold;text-transform:uppercase;margin:0;}
 .content-resources .nav-pills li{margin:0;padding:0 0 0 1px;font-size:1em;line-height:1em;height:2.75em;position: relative;white-space:nowrap;border-left:10px solid transparent;}
 .content-resources .nav-pills li.active{ /* see custom theme colors */}
@@ -131,7 +142,7 @@ ul.shivanode-info li div { display: inline-block; }
 	margin: 0px 0px 24px;
 	text-decoration: underline;
 }
-/* For the popup share block */
+/**** The Popup share block ****/
 .page-node-share .block-system-main {
 	margin: 0px;
 	padding: 0px;
@@ -158,4 +169,10 @@ body.page-node-share.lightbox-processed {
 
 #sharetabs .tab-pane .stButton span {
 	min-height: 22px !important;
+}
+
+/**** Shivanode Edit page ****/
+#data_sheet_in_use .label {
+    color: #555;
+    letter-spacing: 0.5px;
 }

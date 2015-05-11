@@ -86,52 +86,10 @@
 		hide($content['comments']);
 		hide($content['links']);
 	?>
-  <div class="content row"<?php print $content_attributes; ?>>
-		<div class="visualization col-md-12 col-lg-9">
+  <div class="content"<?php print $content_attributes; ?>>
+  	<div class="vis-infoshare"><?php print $infopop . $sharepop; ?></div>
+		<div class="visualization">
 			<?php print render($content['shivanode_json']); ?>
-		</div>
-		
-		<div class="vis-sidebar col-md-12 col-lg-3">
-		<!--	<table>
-				<td>
-					<?php if($can_edit): ?>
-						<form action="/node/<?php print $node->nid; ?>/edit">
-							<button class="btn-block btn btn-primary form-submit btn-icon shivanode-btn" type="submit" id="edit-submit--1">
-								<span class="icon shanticon-editor"></span> <span>Edit This<br/>Visualization</span>
-							</button>
-						</form>
-					<?php endif; ?>
-				</td>
-				<td>
-							<button class="btn-block btn btn-primary form-submit btn-icon shivanode-btn" type="submit" id="edit-submit--1">
-								<span class="icon shanticon-share"></span> <a href="/node/<?php print $node->nid; ?>/share?format=simple&amp;class=lightbox" 
-										class="sharelink"
-										rel="lightframe[|width:800px; height:450px; scrolling: no;]" 
-										title="Share this visualization!" onclick=""><span>Share This<br/>Visualization</span></a></button>
-				</td>
-			</table>-->
-			<ul class="shivanode-info">
-				<li><span class="icon shanticon-visuals" title="Visualization Type"></span> 
-					<?php 
-						print render($content['shivanode_element_type']);
-						if(!empty($content['shivanode_subtype']))  { print " (" . render($content['shivanode_subtype']) . ")";  }
-					?> </li>
-				<li><span class="icon shanticon-agents" title="Author"></span> <?php
-					$uurl = url('user/' . $uid . '/');
-					$creator = user_load($uid);
-					if(!empty($creator->field_lname)) {
-						 print "<a href=\"$uurl\">{$creator->field_fname['und'][0]['safe_value']} {$creator->field_lname['und'][0]['safe_value']}</a>"; 
-					} else {
-						print $name;
-					}?></li>
-				<li><span class="icon shanticon-calendar" title="Date Created"></span> <?php print date('M j, Y', $created); ?></li>
-				<li><a href="/node/<?php print $node->nid; ?>/share?format=simple&amp;class=lightbox" 
-										class="sharelink"
-										rel="lightframe[|width:800px; height:450px; scrolling: no;]" 
-										title="Share this visualization!" onclick=""><button class="btn-block btn btn-primary form-submit btn-icon" type="submit" id="edit-submit--1" name="op" value="Share this Visualization">
-					<span class="icon shanticon-share"></span> <span>Share</span></button></a>
-				</li>
-			</ul>
 		</div>
 	</div>
   <?php print render($content['links']); ?>

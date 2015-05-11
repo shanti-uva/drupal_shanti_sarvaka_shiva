@@ -157,7 +157,7 @@ body.page-node-share.lightbox-processed {
 }
 
 #sharetabs .tab-pane h3 {
-	color: #5a65d1;
+	color: #486b01 ;
 	font-size: 1.5rem;
 	font-weight: bold;
 	letter-spacing: 0.75px;
@@ -169,6 +169,53 @@ body.page-node-share.lightbox-processed {
 
 #sharetabs .tab-pane .stButton span {
 	min-height: 22px !important;
+}
+
+/**** Shivanode View Page ****/
+.vis-infoshare > div {
+  display: inline-block;  
+  margin: 0px 12px 0px 0px
+}
+
+.vis-infoshare .popover-link {
+  background: transparent;
+  border: none;
+  height: 1rem;
+  width: 1.25rem;
+  color: #486b01;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1.75rem;
+}
+
+.vis-infoshare .popover-link .icon {
+	background: transparent;
+  border: none;
+  height: 1rem;
+  width: 1.25rem;
+  color: #486b01;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.vis-infoshare .visinfo .popover.related-resources-popover {
+	background-color: #FFFFF !important;
+}
+
+/*.vis-infoshare .visinfo .popover h5.popover-title { color: white; }*/
+
+.visinfo .popover-content {
+	  background-color: #ffffff;
+}
+
+.visinfo .popover-content ul.info {
+	margin: 0px;
+	padding: 0px;
+}
+
+.visinfo .popover-content ul.info li {
+	list-style-type: none;
 }
 
 /**** Shivanode Edit page ****/

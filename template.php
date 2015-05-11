@@ -38,13 +38,46 @@ function sarvaka_shiva_preprocess_page(&$vars) {
 }
 
 /**
- * Implements hook_preprocess_node: adds variable "can_edit" to determine whether to display an edit button
+ * Implements hook_preprocess_node: 
+ * 		adds variable "can_edit" to determine whether to display an edit button
+ * 		creates info popup and share link
  */
 function sarvaka_shiva_preprocess_node(&$vars) {
-	global $user;
-	$vars['can_edit'] = FALSE;
-	if(node_access('update', $vars['node'], $user)) {
-		$vars['can_edit'] = TRUE;
+	//dpm($vars, 'pp node vars');
+	if($vars['type'] == 'shivanode') {
+		global $user;
+		$vars['can_edit'] = FALSE;
+		if(node_access('update', $vars['node'], $user)) {
+			$vars['can_edit'] = TRUE;
+		}
+		$uurl = url('user/' . $user->uid . '/');
+		$auth = (!empty($user->field_lname)) ? "<a href=\"$uurl\">{$creator->field_fname['und'][0]['safe_value']} {$creator->field_lname['und'][0]['safe_value']}</a>" : $user->name;
+		$infovars = array(
+			'icon' => 'fa-info-circle',
+			'title' => $vars['title'],
+			'vtype' => $vars['content']['shivanode_element_type'][0]['#markup'],
+			'vsubtype' => $vars['content']['shivanode_subtype'][0]['#markup'],
+			'vauthor' => $auth,
+			'vdate' => date('M j, Y', $vars['created']),
+			'vdesc' => $vars['content']['shivanode_description'][0]['#markup'],
+			'vfooter' => '',
+		);
+		$vars['infopop'] = sarvaka_shiva_custom_info_popover($infovars);
+		
+		// Share pop
+		$sharepop = sarvaka_shiva_custom_info_popover(array(
+											'icon' => 'shanticon-share', 
+											'title' => t("Share Visualization"),
+											'vdesc' => t('<p>Click to view sharing options.</p>'),
+											'vfooter' => '',
+											/* 'options' => 'data-delay=\'{"show": 200, "hide": 200}\'', // Doesn't work */
+											));
+		$vars['sharepop'] = "<div class=\"share-link\"><a href=\"/node/{$vars['node']->nid}/share?format=simple&amp;class=lightbox\" 
+										class=\"sharelink\"
+										rel=\"lightframe[|width:800px; height:450px; scrolling: no;]\" 
+										title=\"Share this visualization!\" >
+										$sharepop
+										</a></div>";
 	}
 }
 
@@ -65,4 +98,47 @@ function sarvaka_shiva_field__shivadata_source_url($variables) {
   $output = '<div class="' . $variables ['classes'] . '"' . $variables ['attributes'] . '>' . $output . '</div>';
  
   return $output;
+}
+
+/**
+ * Creates custom popovers for Shivnode information based on shanti_sarvaka_info_popover
+ * 
+ * Provides markup for the info popups from icons etc.
+ * 	Variables:
+ * 		- icon 		 (string) 	: icon class to use
+ * 		- title 	 (string) 	: Header of popover
+ * 		- vtype    (string) 	: Type of Visualization
+ * 		- vsubtype (string) 	: Subtype
+ * 		- vauthor   (string)  : Author
+ * 		- vdate     (string) 	: Date
+ * 		- footer 	 (string) 	: Footer content (optional)
+ *    - options (string)    : "data-..." attribute options
+ */
+function sarvaka_shiva_custom_info_popover($variables) {
+	$icon = $variables['icon'];
+	$icon = (strpos($icon, 'fa') > -1) ? "fa $icon" : "icon $icon";
+	$subtype = (!empty($variables['vsubtype'])) ? "({$variables['vsubtype']})" : "";
+	$infoitems = $vtype = $vauthor = $vdate = '';
+	if (!empty($variables['vtype'])) {
+		$vtype = "<li><span class=\"icon shanticon-visuals\" title=\"Visualization Type\"></span> {$variables['vtype']} {$subtype}</li>";
+	}
+	if (!empty($variables['vauthor'])) {
+		$vauthor = "<li><span class=\"icon shanticon-agents\" title=\"Author\">{$variables['vauthor']}</span></li>";
+	}
+	if (!empty($variables['vdate'])) {
+		$vdate = "<li><span class=\"icon shanticon-calendar\" title=\"Date Created\"></span> {$variables['vdate']}</li>";
+	}
+	if (!empty($vtype) || !empty($vauthor) || !empty($vdate)) {
+		$infoitems = '<ul class="info">' . $vtype . $vauthor . $vdate . '</ul>';
+	}
+	$options = (!empty($variables['options'])) ? $variables['options'] : '';
+	$html = "<div class=\"visinfo\"><span class=\"popover-link\"><span class=\"{$icon}\"></span></span>
+						<div class=\"popover\" data-title=\"{$variables['title']}\" {$options}>
+							<div class=\"popover-body\">
+								{$infoitems}
+								<div class=\"desc\">{$variables['vdesc']}</div>
+							</div>
+							<div class=\"popover-footer\">{$variables['vfooter']}</div>
+						</div></div>";
+	return $html;
 }

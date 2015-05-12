@@ -43,27 +43,62 @@ function sarvaka_shiva_preprocess_page(&$vars) {
  * 		creates info popup and share link
  */
 function sarvaka_shiva_preprocess_node(&$vars) {
-	//dpm($vars, 'pp node vars');
-	if($vars['type'] == 'shivanode') {
+	//dpm($vars, 'pp node vars in theme');
+	$author = user_load($vars['uid']);
+	$author_link = l($author->name, 'user/' . $vars['uid']);
+	
+	if($vars['type'] == 'shivadata') {
+	// For Shiva Data nodes
+		$linklist = '<ul>';
+		foreach($vars['vis_links'] as $n => $link) {
+			$linklist .= "<li>$link</li>";
+		}
+		$linklist .= '</ul>';
+		$infovars = array(
+			'icon' => 'fa-info-circle',
+			'title' => $vars['title'],
+			'vauthor' => $author_link,
+			'vdate' => date('M j, Y', $vars['created']),
+			'vdata' => 'Visualizations:' . $linklist,
+			'vdesc' => (!empty($vars['content']['body'])) ? $vars['content']['body'] : "",
+			'vfooter' => '',
+		);
+		$vars['infopop'] = sarvaka_shiva_custom_info_popover($infovars);
+		$vars['viewpop'] = sarvaka_shiva_custom_info_popover(array(
+											'icon' => 'shanticon-link-external', 
+											'title' => t("View in New Window"),
+											'vdesc' => t('<p>View this data in a separate window</p>'),
+											'vfooter' => '',
+											));
+		$vars['usepop'] = sarvaka_shiva_custom_info_popover(array(
+											'icon' => 'shanticon-visuals', 
+											'title' => t("Use this Data"),
+											'vdesc' => t('<p>Create a visualization with this data</p>'),
+											'vfooter' => '',
+											));
+		$vars['source_url'] = (empty($vars['shivadata_source_url'])) ? '' : $vars['shivadata_source_url'][0]['value'];
+		$vars['create_url'] = url("create/{$vars['nid']}");
+		//$vars['link_external'] = "<div class=\"share-link\"><a href=\"$source_url\" target=\"_blank\">$ext_link_pop</a></div>";
+											
+	} else if($vars['type'] == 'shivanode') {
+	// For Shiva Visualization Nodes
 		global $user;
 		$vars['can_edit'] = FALSE;
 		if(node_access('update', $vars['node'], $user)) {
 			$vars['can_edit'] = TRUE;
 		}
-		$uurl = url('user/' . $user->uid . '/');
-		$auth = (!empty($user->field_lname)) ? "<a href=\"$uurl\">{$creator->field_fname['und'][0]['safe_value']} {$creator->field_lname['und'][0]['safe_value']}</a>" : $user->name;
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
 			'vtype' => $vars['content']['shivanode_element_type'][0]['#markup'],
 			'vsubtype' => $vars['content']['shivanode_subtype'][0]['#markup'],
-			'vauthor' => $auth,
+			'vauthor' => $author_link,
 			'vdate' => date('M j, Y', $vars['created']),
-			'vdesc' => $vars['content']['shivanode_description'][0]['#markup'],
+			'vdata' => "Data: " . l($vars['data_node']->title, "node/{$vars['data_node']->nid}"),
+			'vdesc' => (!empty($vars['content']['shivanode_description'])) ? $vars['content']['shivanode_description'][0]['#markup'] : "",
 			'vfooter' => '',
 		);
 		$vars['infopop'] = sarvaka_shiva_custom_info_popover($infovars);
-		
 		// Share pop
 		$sharepop = sarvaka_shiva_custom_info_popover(array(
 											'icon' => 'shanticon-share', 
@@ -127,6 +162,9 @@ function sarvaka_shiva_custom_info_popover($variables) {
 	}
 	if (!empty($variables['vdate'])) {
 		$vdate = "<li><span class=\"icon shanticon-calendar\" title=\"Date Created\"></span> {$variables['vdate']}</li>";
+	}
+	if (!empty($variables['vdata'])) {
+		$vdate = "<li><span class=\"icon shanticon-list\" title=\"Data Used\"></span> {$variables['vdata']}</li>";
 	}
 	if (!empty($vtype) || !empty($vauthor) || !empty($vdate)) {
 		$infoitems = '<ul class="info">' . $vtype . $vauthor . $vdate . '</ul>';

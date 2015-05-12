@@ -86,36 +86,23 @@
 		hide($content['comments']);
 		hide($content['links']);
 	?>
-  <div class="content row"<?php print $content_attributes; ?>>
-		<div class="visdata col-md-12 col-lg-9">
-			<?php print render($content['shivadata_source_url']); ?>
-		</div>
-		
-		<div class="vis-sidebar col-md-12 col-lg-3">
-		
-			<ul class="shivanode-info">
-				<li><span class="icon shanticon-agents" title="Author"></span> <?php
-					$uurl = url('user/' . $uid . '/');
-					$creator = user_load($uid);
-					if(!empty($creator->field_lname)) {
-						 print "<a href=\"$uurl\">{$creator->field_fname['und'][0]['safe_value']} {$creator->field_lname['und'][0]['safe_value']}</a>"; 
-					} else {
-						print $name;
-					}?></li>
-				<li><span class="icon shanticon-calendar" title="Date Created"></span> <?php print date('M j, Y', $created); ?></li>
-				<li><?php print $use_link; ?></li>
-				<?php if(count($shivanode_links) > 0) : ?>
-					<li><span class="sndata-links">Used By:</span>
-						<ul>
-							<?php foreach($shivanode_links as $snlink): ?>
-								<li><?php print $snlink; ?></li>
-							<?php endforeach; ?>
-						</ul>
-					</li>
-				<?php else: ?>
-					<li><span class="sndata-links">Not used in a visualization</span></li>
-				<?php endif; ?>
-			</ul>
+  <div class="content"<?php print $content_attributes; ?>>
+  	<div class="vis-infoshare">
+  		<?php print $infopop; ?> 
+  		<div class="share-link"><a href="<?php print $source_url; ?>" target="_blank"><?php print $viewpop ?></a></div>
+  		<div class="use-link"><a href="<?php print $create_url; ?>"<?php print $usepop; ?></a></div>
+  	</div>
+		<div class="visualization">
+			<iframe 
+				id="shivaViewFrame" 
+				src="<?php print $source_url; ?>" 
+				height="1050" 
+				width="100%" 
+				scrolling="auto" 
+				style="overflow: auto;" 
+				frameborder="0" 
+				disabled="disabled"
+			> </iframe>
 		</div>
 	</div>
   <?php print render($content['links']); ?>

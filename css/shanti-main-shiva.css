@@ -73,6 +73,16 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
   list-style-type: none;
 }
 
+/**** Create Page *****/
+.page-create .shanti-thumbnail {
+	height: 15rem !important;
+}
+
+.page-create .shanti-thumbnail .title {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
 /**** Facet Blocks ****/
 div.block-facetapi:after {
 	border-top: thin solid #a0a0a0;

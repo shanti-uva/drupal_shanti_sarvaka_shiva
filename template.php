@@ -54,13 +54,14 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			$linklist .= "<li>$link</li>";
 		}
 		$linklist .= '</ul>';
+		if (count($vars['vis_links']) == 0) { $linklist = "Data not yet visualized."; }
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
 			'vauthor' => $author_link,
 			'vdate' => date('M j, Y', $vars['created']),
 			'vdata' => 'Visualizations:' . $linklist,
-			'vdesc' => (!empty($vars['content']['body'])) ? $vars['content']['body'] : "",
+			'vdesc' => (!empty($vars['content']['body'])) ? $vars['content']['body'][0]['#markup'] : "",
 			'vfooter' => '',
 		);
 		$vars['infopop'] = sarvaka_shiva_custom_info_popover($infovars);
@@ -77,7 +78,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 											'vfooter' => '',
 											));
 		$vars['source_url'] = (empty($vars['shivadata_source_url'])) ? '' : $vars['shivadata_source_url'][0]['value'];
-		$vars['create_url'] = url("create/{$vars['nid']}");
+		$vars['create_url'] = url("create/shivanode/{$vars['nid']}");
 		//$vars['link_external'] = "<div class=\"share-link\"><a href=\"$source_url\" target=\"_blank\">$ext_link_pop</a></div>";
 											
 	} else if($vars['type'] == 'shivanode') {
@@ -87,6 +88,17 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 		if(node_access('update', $vars['node'], $user)) {
 			$vars['can_edit'] = TRUE;
 		}
+		$linktxt = '';
+		if (!empty($vars['data_node'])) {
+			if (is_string($vars['data_node']) && strpos($vars['data_node'], 'http') > -1) {
+				$ltitle =  t('External Source');
+				$lurl = $vars['data_node'];
+				$linktxt = l($ltitle, $lurl, array('attributes' => array('target' => '_blank')));
+			} else {
+				$linktxt = l($vars['data_node']->title, "node/{$vars['data_node']->nid}");
+			}
+			$linktxt = "Data: " . $linktxt;
+		}
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
@@ -94,7 +106,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			'vsubtype' => $vars['content']['shivanode_subtype'][0]['#markup'],
 			'vauthor' => $author_link,
 			'vdate' => date('M j, Y', $vars['created']),
-			'vdata' => "Data: " . l($vars['data_node']->title, "node/{$vars['data_node']->nid}"),
+			'vdata' => $linktxt,
 			'vdesc' => (!empty($vars['content']['shivanode_description'])) ? $vars['content']['shivanode_description'][0]['#markup'] : "",
 			'vfooter' => '',
 		);

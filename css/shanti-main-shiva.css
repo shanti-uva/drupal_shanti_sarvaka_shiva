@@ -46,11 +46,15 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .shanti-field-agent span::before{font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
 .shanti-thumbnail-field .shanti-field-content a { display: inline; }
 
-/**** Explore Thumbs ****/
-.page-explore li.shanti-thumbnail {
-  margin: 6px 8px 25px;
+/**** Explore and Create Thumbs ****/
+.page-explore li.shanti-thumbnail, .page-create li.shanti-thumbnail {
   height: 200px;
   font-size: 1.75rem;
+	margin: 18px 2%;
+}
+
+.page-explore li.shanti-thumbnail, .page-create li.shanti-thumbnail .body-wrap {
+    height: 40px !important;
 }
 
 .page-explore li.shanti-thumbnail .shanti-thumbnail-image {
@@ -73,15 +77,11 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
   list-style-type: none;
 }
 
-/**** Create Page *****/
-.page-create .shanti-thumbnail {
-	height: 15rem !important;
-}
-
 .page-create .shanti-thumbnail .title {
 	font-size: 1.25rem;
 	font-weight: bold;
 }
+
 
 /**** Facet Blocks ****/
 div.block-facetapi:after {
@@ -152,6 +152,7 @@ ul.shivanode-info li div { display: inline-block; }
 	margin: 0px 0px 24px;
 	text-decoration: underline;
 }
+
 /**** The Popup share block ****/
 .page-node-share .block-system-main {
 	margin: 0px;
@@ -232,4 +233,14 @@ body.page-node-share.lightbox-processed {
 #data_sheet_in_use .label {
     color: #555;
     letter-spacing: 0.5px;
+}
+
+/***** Shivanode Views ****/
+.sn-list-filter {
+  margin: 8px 0px;
+}
+
+.sn-list-filter label {
+	margin: 0 1rem 0 0;
+	padding: 0;
 }

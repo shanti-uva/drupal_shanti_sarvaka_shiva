@@ -234,6 +234,9 @@ body.page-node-share.lightbox-processed {
 
 .vis-infoshare .visinfo .popover.related-resources-popover {
 	background-color: #FFFFF !important;
+  min-width: 350px;
+  margin-top: 18px;
+	margin-left: 4px;
 }
 
 /*.vis-infoshare .visinfo .popover h5.popover-title { color: white; }*/

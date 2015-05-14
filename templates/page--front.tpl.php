@@ -101,7 +101,7 @@
                  <?php print render($page['content']); ?>
               </article>
               <!-- All versus My Visualization Tabs -->
-              <div>
+              <div class="sn-tab-blocks">
 				        <ul class="nav nav-tabs nav-justified" role="tablist">
 				          <li class="active"><a href="#allvis" role="tab" data-toggle="tab" id="allvis-tab"><?php print t('All Visualization'); ?></a></li>
 				          <li><a href="#myvis" role="tab" data-toggle="tab" id="myvis-tab"><?php print t('My Visualizations'); ?></a></li>

@@ -1,18 +1,12 @@
-<?php
-
-/**
+<?php 
+  
+ /**
  * @file
- * View template for shanti gallery of thumbnails
+ *Takes default simple view template to display a list of rows and removes wrapping div
  *
  * @ingroup views_templates
  */
 ?>
-<?php if (!empty($title)): ?>
-  <h3><?php print $title; ?></h3>
-<?php endif; ?>
-
-<ul class="shanti-gallery">
-	<?php foreach ($rows as $id => $row): ?>
-	  <?php print $row; ?>
-	<?php endforeach; ?>
-</ul>
+<?php foreach ($rows as $id => $row): ?>
+  <?php print $row; ?>
+<?php endforeach; ?>

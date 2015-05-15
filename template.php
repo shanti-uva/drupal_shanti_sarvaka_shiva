@@ -99,11 +99,12 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			}
 			$linktxt = "Data: " . $linktxt;
 		}
+		$vsubtype = (empty($vars['content']['shivanode_subtype'][0]['#markup'])) ? "" : $vars['content']['shivanode_subtype'][0]['#markup'];
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
 			'vtype' => $vars['content']['shivanode_element_type'][0]['#markup'],
-			'vsubtype' => $vars['content']['shivanode_subtype'][0]['#markup'],
+			'vsubtype' => $vsubtype,
 			'vauthor' => $author_link,
 			'vdate' => date('M j, Y', $vars['created']),
 			'vdata' => $linktxt,

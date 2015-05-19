@@ -269,3 +269,8 @@ body.page-node-share.lightbox-processed {
 	margin: 0 1rem 0 0;
 	padding: 0;
 }
+
+/* Hide date column in data view. Need to keep column in view for code */
+.view-display-id-my_data_pane .views-field.views-field-created {
+    display: none;
+}

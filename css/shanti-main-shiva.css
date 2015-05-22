@@ -3,17 +3,17 @@
 
 /***** Custom Colors *******/
 /** Old Color Styles **/
-.basebg { background-color: #486b01; } 
-.basecolor { color: #486b01; }   
+.basebg { background-color: #5a9017; } 
+.basecolor { color: #5a9017; }   
 ul.ss-full-tabs>li.active>a:after {
-  border-color: #486b01;
-  border-top-color: #486b01;
+  border-color: #5a9017;
+  border-top-color: #5a9017;
 } 
 i.thumbtype { background-color: rgba(72,107,1, 0.8); }
-.breadwrap ol li .icon{ background:#486b01;}
+.breadwrap ol li .icon{ background:#5a9017;}
 .ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#486b01;}
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#486b01;}
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#5a9017;}
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#5a9017;}
 
 /** Newer color styles **/
 	  /* (styles taken from MB and color values changed for Shiva)  */
@@ -22,8 +22,8 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .breadcrumb .icon,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:active{ background-color:#486b01 !important;}
-.nav-justified>li.active::before{ color:#486b01 !important;}
+.nav-justified>li.active a:active{ background-color:#5a9017 !important;}
+.nav-justified>li.active::before{ color:#5a9017 !important;}
     /* darker shades below are used to better define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
@@ -190,7 +190,7 @@ body.page-node-share.lightbox-processed {
 }
 
 #sharetabs .tab-pane h3 {
-	color: #486b01 ;
+	color: #5a9017 ;
 	font-size: 1.5rem;
 	font-weight: bold;
 	letter-spacing: 0.75px;
@@ -215,7 +215,7 @@ body.page-node-share.lightbox-processed {
   border: none;
   height: 1rem;
   width: 1.25rem;
-  color: #486b01;
+  color: #5a9017;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -227,7 +227,7 @@ body.page-node-share.lightbox-processed {
   border: none;
   height: 1rem;
   width: 1.25rem;
-  color: #486b01;
+  color: #5a9017;
   display: inline-block;
   font-size: 1.5rem;
 }

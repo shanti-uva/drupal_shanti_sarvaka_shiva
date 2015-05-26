@@ -41,7 +41,7 @@
   <div class="shanti-thumbnail-info">
 		<div class="body-wrap">
 			<div class="shanti-thumbnail-field shanti-field-title">
-				<span class="field-content"><a href="#" class="shanti-thumbnail-link"><?php print $fields['title']->content; ?></a></span>
+				<span class="field-content"><a href="<?php print url('node/' . $fields['nid']->content); ?>" class="shanti-thumbnail-link"><?php print $fields['title']->content; ?></a></span>
 			</div>
 			
 			<div class="shanti-thumbnail-field shanti-field-type">

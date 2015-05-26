@@ -94,16 +94,19 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 				$ltitle =  t('External Source');
 				$lurl = $vars['data_node'];
 				$linktxt = l($ltitle, $lurl, array('attributes' => array('target' => '_blank')));
-			} else {
+			} else if (is_object($vars['data_node']) && isset($vars['data_node']->nid)) {
 				$linktxt = l($vars['data_node']->title, "node/{$vars['data_node']->nid}");
+			} else {
+				$linktxt = t('n/a');
 			}
 			$linktxt = "Data: " . $linktxt;
 		}
+		$vtype = (empty($vars['content']['shivanode_element_type'][0]['#markup'])) ? "" : $vars['content']['shivanode_element_type'][0]['#markup'];
 		$vsubtype = (empty($vars['content']['shivanode_subtype'][0]['#markup'])) ? "" : $vars['content']['shivanode_subtype'][0]['#markup'];
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
-			'vtype' => $vars['content']['shivanode_element_type'][0]['#markup'],
+			'vtype' => $vtype,
 			'vsubtype' => $vsubtype,
 			'vauthor' => $author_link,
 			'vdate' => date('M j, Y', $vars['created']),

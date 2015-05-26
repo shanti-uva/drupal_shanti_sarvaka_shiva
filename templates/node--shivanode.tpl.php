@@ -92,8 +92,19 @@
 			<?php print render($content['shivanode_json']); ?>
 		</div>
 	</div>
-  <?php print render($content['links']); ?>
+  <?php 
+  	if (isset($content['field_subjects_kmap'])) {
+			print render($content['field_subjects_kmap']);
+		}
 
-  <?php print render($content['comments']); ?>
+		if (isset($content['field_places_kmap'])) {
+			print render($content['field_places_kmap']);
+		}
+  ?>
+
+  <?php 
+  //print render($content['links']);
+  //print render($content['comments']); 
+  ?>
 
 </div>

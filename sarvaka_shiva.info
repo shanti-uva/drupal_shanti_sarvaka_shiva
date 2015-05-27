@@ -4,6 +4,7 @@ core = 7.x
 base theme = shanti_sarvaka
 version = 7.x-1.x
 
+dependencies[] = shivanode;
 dependencies[] = jquery_update ; requires jquery v 1.10+
 
 ;;;;;;;;;;;;;;;;;;;;;

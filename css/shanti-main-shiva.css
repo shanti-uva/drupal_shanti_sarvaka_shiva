@@ -114,8 +114,8 @@ div.block-facetapi:after {
 	margin-left: 10%;
 }
 div.block-facetapi h4 { font-size: 1.5rem; margin-top: 12px;}
-ul.facetapi-facetapi-links { margin: 6px 0px 6px; padding-left: 2px;}
-ul.facetapi-facetapi-links li.leaf {
+ul.facetapi-facetapi-links, ul.facetapi-shivanode-types { margin: 6px 0px 6px; padding-left: 2px;}
+ul.facetapi-facetapi-links li.leaf, ul.facetapi-shivanode-types li.leaf {
 	list-style-type: none;
 	list-style-image: none;
 	padding: 0px;

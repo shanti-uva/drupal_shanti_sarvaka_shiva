@@ -134,16 +134,20 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 /**
  * Implements hook_preprocess_search_results
  */
-
 function sarvaka_shiva_preprocess_search_result(&$vars) {
 	$url = drupal_get_path('theme', 'sarvaka_shiva') . '/images/sngen-chart-default.png';
 	$node = $vars['result']['node'];
-	$vars['url'] = drupal_get_path_alias("node/{$node->nid}");
+	$vars['url'] = url("node/{$node->nid}");
+	$author = user_load($node->uid);
+	$vars['result']['author'] = l($author->name, "/user/{$node->uid}");
 	$vars['snippet'] = '';
 	if (module_exists('shivanode')) {
 		module_load_include('inc', 'shivanode', 'includes/shivanode');
-		$imgurl = _get_thumb_image($node);
-		$vars['result']['thumb_url'] = '<img class="img-responsive" typeof="foaf:Image" src="' . $imgurl . '" />';
+		$vars['result']['thumb_url'] = _get_thumb_image($node);
+		$vars['result']['sntype'] = _get_shivanode_type($node);
+	}
+	if (!empty($vars['result']['date'])) {
+		$vars['result']['date'] = date('M j, Y', $vars['result']['date']); 
 	}
 }
 

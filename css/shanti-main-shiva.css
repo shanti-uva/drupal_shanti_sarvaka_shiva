@@ -2,29 +2,22 @@
 
 
 /***** Custom Colors *******/
-/** Old Color Styles **/
-.basebg { background-color: #5a9017; } 
-.basecolor { color: #5a9017; }   
-ul.ss-full-tabs>li.active>a:after {
-  border-color: #5a9017;
-  border-top-color: #5a9017;
-} 
-i.thumbtype { background-color: rgba(72,107,1, 0.8); }
-.breadwrap ol li .icon{ background:#5a9017;}
-.ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#5a9017;}
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#5a9017;}
-
 /** Newer color styles **/
 	  /* (styles taken from MB and color values changed for Shiva)  */
-.titlearea,
-.carousel-control,
-.breadcrumb .icon,
+.basebg, /* older class name, deprecated */
+.titlearea, /* colored banner */
+.thumbtype, /* icon */
+.carousel-control, /* directional buttons */
+.breadcrumb .icon, /* arrow ofr breadcrumb path */
+.nav-justified>li.active, /* large tabs juststified */
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active{ background-color:#5a9017 !important;}
+.nav-justified>li.active::after{ border-color: #5a9017;border-top-color: #5a9017;}
+.basecolor, /* older class name, deprecated */
 .nav-justified>li.active::before{ color:#5a9017 !important;}
-    /* darker shades below are used to better define details */
+ /* darker shades to define details */
+.navbar-brand:hover .site-slogan,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
 .main-content .selectpicker .caret::before,
@@ -35,7 +28,8 @@ i.thumbtype { background-color: rgba(72,107,1, 0.8); }
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon,
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
-.view-section .fancytree-node.fancytree-selected > .glyphicon{ color:rgb(72,107,1) !important; }
+.view-section .fancytree-node.fancytree-selected > .glyphicon
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:rgb(72,107,1) !important; }
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}

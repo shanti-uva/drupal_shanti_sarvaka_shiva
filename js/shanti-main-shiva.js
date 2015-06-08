@@ -27,9 +27,9 @@
 		                newOptions = { flexibleWidth: '30%' };
 		
 		            // Breakpoint
-		            /** if (windowWidth < 1024) {
+		            if (windowWidth < 1024) {
 		              newOptions.flexibleWidth = '100%';
-		            } */
+		            }
 		
 		            handler.wookmark(newOptions);
 		          });

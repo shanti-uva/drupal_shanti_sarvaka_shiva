@@ -1,9 +1,4 @@
-/** Shiva Sarvaka Styles **/
-
-
-/***** Custom Colors *******/
-/** Newer color styles **/
-	  /* (styles taken from MB and color values changed for Shiva)  */
+/***** Sarvaka Styles :: Custom Colors *******/
 .basebg, /* older class name, deprecated */
 .titlearea, /* colored banner */
 .thumbtype, /* icon */
@@ -66,7 +61,6 @@
 .page-explore li.shanti-thumbnail, .page-create li.shanti-thumbnail {
   height: 200px;
   font-size: 1.75rem;
-	margin: 0.5rem 0.8rem;
 }
 
 .page-create li.shanti-thumbnail .body-wrap {

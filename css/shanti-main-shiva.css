@@ -28,7 +28,8 @@
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
-.shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.7); }
+.shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.6);}
+.shanti-thumbnail:hover .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1, 0.9);}
 /**** End of Custom Colors ****/
 
 /***** Gallery Views ****/

@@ -94,8 +94,11 @@
 }
 
 .page-create .shanti-thumbnail .title {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: bold;
+	margin:1rem auto;
+	text-align:center;
+	letter-spacing:1px;
 }
 
 

@@ -11,6 +11,7 @@
 .nav-justified>li.active::after{ border-color: #5a9017;border-top-color: #5a9017;}
 .basecolor, /* older class name, deprecated */
 .navbar-brand:hover .site-slogan{ color:#5a9017 !important;}
+
  /* darker shades to define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
@@ -34,6 +35,9 @@
 	.nav-justified>li.active::before{ color:#5a9017 !important}
 }
 /**** End of Custom Colors ****/
+
+
+.front .main-wrapper{ min-height: 250em;}
 
 /***** Gallery Views ****/
 .shanti-gallery2 {

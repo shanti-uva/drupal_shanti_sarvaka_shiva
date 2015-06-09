@@ -59,7 +59,7 @@
 		            ignoreInactiveItems: false
 		          };
 		          // Get a reference to your grid items.	
-		          var handler = $('.sn-explore-list .shanti-thumbnail');
+		          var handler = $('.shanti-gallery li');
 		
 		          var $window = $(window);
 		          $window.resize(function() {

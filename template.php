@@ -90,6 +90,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 		if(node_access('update', $vars['node'], $user)) {
 			$vars['can_edit'] = TRUE;
 		}
+		// Variables/markup for info popup
 		$linktxt = '';
 		if (!empty($vars['data_node'])) {
 			if (is_string($vars['data_node']) && strpos($vars['data_node'], 'http') > -1) {
@@ -116,12 +117,11 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 					$vgroups .= "$link,";
 				}
 			}
-		} else {
-			drupal_set_message("group ref empty!");
-		}
+		} 
 		if (!empty($vgroups)) {
 			$vgroups = substr($vgroups, 0, strlen($vgroups) - 1);
 		}
+		
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
@@ -135,7 +135,8 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			'vfooter' => '',
 		);
 		$vars['infopop'] = sarvaka_shiva_custom_info_popover($infovars);
-		// Share pop
+		
+		// Variables/markup for Share pop
 		$sharepop = sarvaka_shiva_custom_info_popover(array(
 											'icon' => 'shanticon-share', 
 											'title' => t("Share Visualization"),
@@ -149,6 +150,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 										title=\"Share this visualization!\" >
 										$sharepop
 										</a></div>";
+										
 	}
 }
 /**
@@ -205,7 +207,6 @@ function sarvaka_shiva_field__shivadata_source_url($variables) {
  *    - options (string)    : "data-..." attribute options
  */
 function sarvaka_shiva_custom_info_popover($variables) {
-	//dpm($variables, 'in popover function');
 	$icon = $variables['icon'];
 	$icon = (strpos($icon, 'fa') > -1) ? "fa $icon" : "icon $icon";
 	$subtype = (!empty($variables['vsubtype'])) ? "({$variables['vsubtype']})" : "";

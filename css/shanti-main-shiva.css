@@ -250,6 +250,25 @@ body.page-node-share.lightbox-processed {
 	list-style-type: none;
 }
 
+
+.vis-infoshare {
+  max-width: 200px;
+  display: inline-block;
+}
+
+.vis-infoshare > .field-name-field-subjects, .vis-infoshare > .field-name-field-places {
+  margin: 0px;
+}
+/*
+.vis-kmaps {
+  display: inline-block;
+}
+
+.vis-kmaps > div {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+*/
 /**** Shivanode Edit page ****/
 #data_sheet_in_use .label {
     color: #555;

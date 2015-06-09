@@ -89,19 +89,26 @@
   <div class="content"<?php print $content_attributes; ?>>
   	<div class="vis-infoshare">
   		<?php print $infopop . $sharepop; ?>
-  		<?php 
-		  	if (isset($content['field_subjects_kmap'])) {
-					print render($content['field_subjects_kmap']);
-				}
-		
-				if (isset($content['field_places_kmap'])) {
-					print render($content['field_places_kmap']);
-				}
-		  ?>
   	</div>
 		<div class="visualization">
 			<?php print render($content['shivanode_json']); ?>
 		</div>
+  	<div class="vis-kmaps">
+  		<div class="vis-subjects">
+  		<?php 
+		  	if (isset($content['field_subjects_kmap'])) {
+					print render($content['field_subjects_kmap']);
+				}
+			?>
+			</div>
+			<div class="vis-places">
+				<?php
+					if (isset($content['field_places_kmap'])) {
+						print render($content['field_places_kmap']);
+					}
+		 	 ?>
+		 	</div>
+  	</div>
 	</div>
   
   <?php 

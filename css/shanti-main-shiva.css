@@ -37,6 +37,13 @@
 /**** End of Custom Colors ****/
 
 
+
+/* search flyout styles */
+.extruder-content h2{ margin-left:1.25rem;}
+.extruder-content ul.facetapi-shivanode-types{ margin-left:2rem;}
+
+
+
 .front .main-wrapper{ min-height: 250em;}
 
 .page-groups .pager{ 

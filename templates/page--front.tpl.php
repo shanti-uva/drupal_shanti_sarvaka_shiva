@@ -99,7 +99,7 @@
               <article class="tab-pane main-col active" id="tab-overview">
               	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                  <?php print render($page['content']); ?>
-              </article>
+              
               <!-- All versus My Visualization Tabs -->
               <div class="sn-tab-blocks">
 				        <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -116,6 +116,7 @@
 				          </div>
 				        </div>
 				      </div>
+              </article>             
             </div>
           </section>
           <!-- END Content -->

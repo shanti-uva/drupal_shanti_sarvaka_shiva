@@ -10,8 +10,7 @@
 .nav-justified>li.active a:active{ background-color:#5a9017 !important;}
 .nav-justified>li.active::after{ border-color: #5a9017;border-top-color: #5a9017;}
 .basecolor, /* older class name, deprecated */
-.navbar-brand:hover .site-slogan,
-.nav-justified>li.active::before{ color:#5a9017 !important;}
+.navbar-brand:hover .site-slogan{ color:#5a9017 !important;}
  /* darker shades to define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
@@ -28,7 +27,12 @@
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
-.shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.7); }
+.shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.6);}
+.shanti-thumbnail:hover .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1, 0.9);}
+
+@media screen and (min-width: 768px) {
+	.nav-justified>li.active::before{ color:#5a9017 !important}
+}
 /**** End of Custom Colors ****/
 
 /***** Gallery Views ****/
@@ -270,16 +274,13 @@ body.page-node-share.lightbox-processed {
 
 
 
-
-
-
-
-
-
 .page-create-shivanode-all .panel-default .panel-heading+.panel-collapse .panel-body{ padding:1.5rem 0;}
 
+.page-node-edit form#page-node-form.node-form.node-page-form,
+.page-groups .content-section .tab-content,
+.front .content-section .tab-content{ max-width:1050px;margin:0 auto;}
 
-
+.page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
 
 
 

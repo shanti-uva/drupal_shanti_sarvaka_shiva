@@ -56,10 +56,10 @@
 		            offset: 15, // Optional, the distance between grid items
 		            outerOffset: 0, // Optional the distance from grid to parent
 		            flexibleWidth: '30%', // Optional, the maximum width of a grid item
-		            ignoreInactiveItems: false,
+		            ignoreInactiveItems: false
 		          };
 		          // Get a reference to your grid items.	
-		          var handler = $('.sn-explore-list li');
+		          var handler = $('.sn-explore-list .shanti-thumbnail');
 		
 		          var $window = $(window);
 		          $window.resize(function() {

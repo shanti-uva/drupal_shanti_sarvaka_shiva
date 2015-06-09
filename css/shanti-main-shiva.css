@@ -30,8 +30,7 @@
 .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.6);}
 .shanti-thumbnail:hover .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1, 0.9);}
 
-@media screen and (min-width: 600px) {
-	
+@media screen and (min-width: 768px) {
 	.nav-justified>li.active::before{ color:#5a9017 !important}
 }
 /**** End of Custom Colors ****/
@@ -275,22 +274,11 @@ body.page-node-share.lightbox-processed {
 
 
 
-
 .page-create-shivanode-all .panel-default .panel-heading+.panel-collapse .panel-body{ padding:1.5rem 0;}
 
 .page-groups .content-section .tab-content,
 .front .content-section .tab-content{ max-width:1050px;margin:0 auto;}
 
 .page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
-
-
-
-
-
-
-.nav-justified > li.active::before{ }
-
-
-
 
 

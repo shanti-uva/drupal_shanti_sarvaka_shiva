@@ -297,7 +297,7 @@ body.page-node-share.lightbox-processed {
 
 .page-node-edit form#page-node-form.node-form.node-page-form,
 .page-groups .content-section .tab-content,
-.front .content-section .tab-content{ max-width:1050px;margin:0 auto;}
+.front .content-section .tab-content{ max-width:1000px;margin:0 auto;}
 
 .page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
 

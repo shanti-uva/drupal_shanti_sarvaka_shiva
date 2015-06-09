@@ -24,7 +24,7 @@
 		            ignoreInactiveItems: false,
 		          };
 		          // Get a reference to your grid items.
-		          var handler = $('.shanti-gallery2 li');
+		          var handler = $('.shanti-gallery li');
 		
 		          var $window = $(window);
 		          $window.resize(function() {

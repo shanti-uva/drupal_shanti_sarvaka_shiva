@@ -39,6 +39,16 @@
 
 .front .main-wrapper{ min-height: 250em;}
 
+.page-groups .pager{ 
+	text-align: left;
+	float: left;
+	margin-top:5rem;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+
 /***** Gallery Views ****/
 .shanti-gallery2 {
   width: 100%;

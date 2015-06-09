@@ -276,9 +276,13 @@ body.page-node-share.lightbox-processed {
 
 .page-create-shivanode-all .panel-default .panel-heading+.panel-collapse .panel-body{ padding:1.5rem 0;}
 
+.page-node-edit form#page-node-form.node-form.node-page-form,
 .page-groups .content-section .tab-content,
 .front .content-section .tab-content{ max-width:1050px;margin:0 auto;}
 
 .page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
+
+
+
 
 

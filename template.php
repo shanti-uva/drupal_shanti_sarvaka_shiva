@@ -55,6 +55,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 		}
 		$linklist .= '</ul>';
 		if (count($vars['vis_links']) == 0) { $linklist = "Data not yet visualized."; }
+		
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
@@ -64,6 +65,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			'vdesc' => (!empty($vars['content']['body'])) ? $vars['content']['body'][0]['#markup'] : "",
 			'vfooter' => '',
 		);
+
 		$vars['infopop'] = sarvaka_shiva_custom_info_popover($infovars);
 		$vars['viewpop'] = sarvaka_shiva_custom_info_popover(array(
 											'icon' => 'shanticon-link-external', 
@@ -99,10 +101,27 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			} else {
 				$linktxt = t('n/a');
 			}
-			$linktxt = "Data: " . $linktxt;
+			//$linktxt = "Data: " . $linktxt;
 		}
 		$vtype = (empty($vars['content']['shivanode_element_type'][0]['#markup'])) ? "" : $vars['content']['shivanode_element_type'][0]['#markup'];
 		$vsubtype = (empty($vars['content']['shivanode_subtype'][0]['#markup'])) ? "" : $vars['content']['shivanode_subtype'][0]['#markup'];
+		// Group info
+		$vgroups = '';
+		if (!empty($vars['og_group_ref'])) {
+			foreach ($vars['og_group_ref'] as $n => $ginfo) {
+				if (!empty($ginfo['target_id'])) {
+					$gid = $ginfo['target_id'];
+					$gnode = node_load($gid);
+					$link = l($gnode->title, "node/$gid");
+					$vgroups .= "$link,";
+				}
+			}
+		} else {
+			drupal_set_message("group ref empty!");
+		}
+		if (!empty($vgroups)) {
+			$vgroups = substr($vgroups, 0, strlen($vgroups) - 1);
+		}
 		$infovars = array(
 			'icon' => 'fa-info-circle',
 			'title' => $vars['title'],
@@ -111,6 +130,7 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 			'vauthor' => $author_link,
 			'vdate' => date('M j, Y', $vars['created']),
 			'vdata' => $linktxt,
+			'vgroups' => $vgroups,
 			'vdesc' => (!empty($vars['content']['shivanode_description'])) ? $vars['content']['shivanode_description'][0]['#markup'] : "",
 			'vfooter' => '',
 		);
@@ -185,10 +205,11 @@ function sarvaka_shiva_field__shivadata_source_url($variables) {
  *    - options (string)    : "data-..." attribute options
  */
 function sarvaka_shiva_custom_info_popover($variables) {
+	//dpm($variables, 'in popover function');
 	$icon = $variables['icon'];
 	$icon = (strpos($icon, 'fa') > -1) ? "fa $icon" : "icon $icon";
 	$subtype = (!empty($variables['vsubtype'])) ? "({$variables['vsubtype']})" : "";
-	$infoitems = $vtype = $vauthor = $vdate = '';
+	$infoitems = $vtype = $vauthor = $vdate = $vgroups = '';
 	if (!empty($variables['vtype'])) {
 		$vtype = "<li><span class=\"icon shanticon-visuals\" title=\"Visualization Type\"></span> {$variables['vtype']} {$subtype}</li>";
 	}
@@ -201,8 +222,11 @@ function sarvaka_shiva_custom_info_popover($variables) {
 	if (!empty($variables['vdata'])) {
 		$vdate = "<li><span class=\"icon shanticon-list\" title=\"Data Used\"></span> {$variables['vdata']}</li>";
 	}
-	if (!empty($vtype) || !empty($vauthor) || !empty($vdate)) {
-		$infoitems = '<ul class="info">' . $vtype . $vauthor . $vdate . '</ul>';
+	if (!empty($variables['vgroups'])) {
+		$vgroups = "<li><span class=\"icon shanticon-stack\" title=\"Collections\"></span> {$variables['vgroups']}</li>";
+	}
+	if (!empty($vtype) || !empty($vauthor) || !empty($vdate) || !empty($vgroups)) {
+		$infoitems = '<ul class="info">' . $vtype . $vauthor . $vdate . $vgroups . '</ul>';
 	}
 	$options = (!empty($variables['options'])) ? $variables['options'] : '';
 	$html = "<div class=\"visinfo\"><span class=\"popover-link\"><span class=\"{$icon}\"></span></span>

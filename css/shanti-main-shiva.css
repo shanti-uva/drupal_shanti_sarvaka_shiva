@@ -180,12 +180,12 @@ ul.shivanode-info li div { display: inline-block; }
 
 
 
-.kmap_search_term_button{ background:#5b68ce;border: none !important;font-weight: normal;text-transform: uppercase;display: inline-block;white-space: nowrap;border-radius: 0.25em;background-clip: padding-box;color: #eee;padding: 0.4rem 1.3rem 0.2rem;position:relative;top:-0.2rem;margin-top:0;line-height: 2em;font-size: 0.82em;letter-spacing: 0.06em;font-family: 'museo-sans-500',helvetica,arial,sans-serif;}
+.kmap_search_term_button{ background:#5b68ce;border: none !important;font-weight: normal;text-transform: uppercase;display: inline-block;white-space: nowrap;border-radius: 0.25em;background-clip:padding-box;color: #eee;padding: 0.4rem 1.3rem 0.2rem !important;position:relative;top:-0.2rem;margin-top:0;margin-left:1rem;line-height: 2em;font-size: 0.82em;letter-spacing: 0.06em;font-family: 'museo-sans-500',helvetica,arial,sans-serif;}
 .kmap_search_term_button:hover{ color:#fff;background:#4850bd;}
 .kmap_search_term_button:active{ background:#5b68ce;}
 
 .form-item-field-places-kmap-und-kmap-search-term label,
-.form-item-field-subjects-kmap-und-kmap-search-term label{ margin-bottom:0.3rem;margin-left:1.5rem;}
+.form-item-field-subjects-kmap-und-kmap-search-term label{ margin-bottom:0.3rem;margin-left:1.5rem;display:block;width:100%;}
 .form-item-field-places-kmap-und-kmap-search-term label,
 .form-item-field-subjects-kmap-und-kmap-search-term label,
 .form-item-field-places-kmap-und-kmap-search-term input,

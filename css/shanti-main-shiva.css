@@ -71,6 +71,7 @@
 .extruder-content ul li a .facet-count{ color:#000;font-size:90%;letter-spacing:normal;}
 .extruder-content ul li a:hover .facet-count{ color: #333;}
 .extruder-content ul li a:active .facet-count{ color:#000; border-bottom-color:transparent !important;}
+.extruder-content ul li a .facet-count::before{ content:'/';margin-right:0.5rem;padding-left:0.5rem;}
 
 .front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
 

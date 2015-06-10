@@ -39,13 +39,38 @@
 
 
 /* search flyout styles */
-.extruder-content h2{ margin-left:1.25rem;}
+.extruder-content h2{ margin-left:1.25rem;font-size:1.32em;}
 .extruder-content ul{ margin-left:1.75rem !important;}
+.extruder-content ul li{ }
+.extruder-content ul li:hover{ color:#111;}
+.extruder-content ul li::before{ 
+	background: #fff;
+	color: transparent;
+	font-family: 'shanticon';
+	content: '\e625';
+	font-size: 1em;
+	float: left;
+	position: relative;
+	top: 0.6rem;
+	right: 0.2rem;
+	border-radius: 50%;
+	background-clip: padding-box;
+	width: 9px;
+	height: 9px;
+	display: block;
+	margin-right: 7px;
+	-webkit-box-shadow: 0 0 2px 1px #aaa;
+	box-shadow: 0 0 2px 1px #aaa;
+	border-collapse: separate;
+} 
+.extruder-content ul li:hover::before{ background: #777;-webkit-box-shadow: none;box-shadow: none;}
 
-.front .field-type-text-with-summary p{ margin-top:0;}
 
-.front .main-wrapper{ min-height: 250em;}
+.front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
 
+/* .front .main-wrapper{ min-height: 250em;} */
+
+/* float pager left */
 .page-groups .pager{ 
 	text-align: left;
 	float: left;

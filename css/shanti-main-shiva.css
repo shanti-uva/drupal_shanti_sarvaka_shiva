@@ -154,7 +154,7 @@ ul.shivanode-info li div { display: inline-block; }
 
 
 /* search flyout styles */
-.extruder-content h2{ margin: 1.5rem 0 1rem 1.5rem; font-size:1.38em;}
+.extruder-content h2{ margin: 1.5rem 0 1rem 1.75rem; font-size:1.38em;}
 .extruder-content ul{ margin:0.6rem 0 0.6rem 2rem !important; padding-bottom:1.3rem; padding-left: 2px;}
 .extruder-content ul li{ font-size: 1em !important;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;line-height:1.32em;padding: 0.2em 0.5em 0 0;}
 .extruder-content ul li:hover{ color:#111;}
@@ -171,7 +171,7 @@ ul.shivanode-info li div { display: inline-block; }
 .extruder-content div.block-facetapi{ margin-top:1rem;}
 .extruder-content div.block-facetapi::after{ display:none;}
 .extruder-content div.block-facetapi::before{ 
-	border-top: thin solid #a0a0a0;
+	border-top: thin solid #d5d5d5;
 	width: 90%;
 	display: block;
 	content: " ";

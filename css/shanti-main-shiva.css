@@ -64,9 +64,9 @@
 } 
 .extruder-content ul li:hover::before{ background:#888;-webkit-box-shadow:none;box-shadow:none;}
 
-.extruder-content ul li a{ color:#555;letter-spacing:0.02rem;border-bottom:1px solid transparent;}
-.extruder-content ul li a:hover{ color: rgb(207, 47, 30); border-bottom-color: rgba(90, 101, 209, .3000);}
-.extruder-content ul li a:active{ border-bottom-color:transparent !important;}
+.extruder-content ul li a{ color:#555;letter-spacing:0.02rem;}
+.extruder-content ul li a:hover{ color: rgb(207, 47, 30);}
+.extruder-content ul li a:active{ }
 
 .extruder-content ul li a .facet-count{ color:#000;font-size:90%;letter-spacing:normal;}
 .extruder-content ul li a:hover .facet-count{ color: #333;}

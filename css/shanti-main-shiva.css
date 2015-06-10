@@ -120,10 +120,12 @@
 .page-explore li.shanti-thumbnail, .page-create li.shanti-thumbnail {
   height: 200px;
   font-size: 1.75rem;
+  margin: 12px;
 }
 
 .page-create li.shanti-thumbnail .body-wrap {
     height: 40px !important;
+    overflow: hidden;
 }
 
 .page-explore li.shanti-thumbnail .shanti-thumbnail-image {

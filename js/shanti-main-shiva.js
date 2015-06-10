@@ -46,6 +46,7 @@
 		      /**
 		       * .sn-explore-list => the different accordion tabs on create/shivanode/all Create Page
 		       */
+		      /** Following code does not work. Makes all images go to top of page
 		      $('.sn-explore-list', context).imagesLoaded(function() {
 		          // Prepare layout options.
 		          var options = {
@@ -76,7 +77,7 @@
 		
 		          // Call the layout function.
 		          handler.wookmark(options);
-		      }); 
+		      }); **/
 			}
 		}
 	};

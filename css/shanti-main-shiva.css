@@ -365,7 +365,7 @@ ul.shivanode-info li div { display: inline-block; }
 
 .kmap_search_term_button{ 
 	background:#5b68ce;
-	border: none;
+	border: none !important;
 	font-weight: normal;
 	text-transform: uppercase;
 	display: inline-block;
@@ -380,8 +380,8 @@ ul.shivanode-info li div { display: inline-block; }
 	letter-spacing: .06em;
 	font-family: 'museo-sans-500',helvetica,arial,sans-serif;
 }
-
-
+.kmap_search_term_button:hover{ color:#fff;background:#4850bd;}
+.kmap_search_term_button:active{ background:#5b68ce;}
 
 
 

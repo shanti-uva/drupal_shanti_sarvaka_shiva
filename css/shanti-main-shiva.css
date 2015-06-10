@@ -364,6 +364,9 @@ ul.shivanode-info li div { display: inline-block; }
 .extruder-content ul li a:hover .facet-count{ color: #000;}
 .extruder-content ul li a:active .facet-count{ color:#000; border-bottom-color:transparent !important;}
 .extruder-content ul li a .facet-count::before{ content:'/';margin-right:0.5rem;padding-left:0.5rem;}
+
+.advanced-view{ padding-left: 0.8rem;}
+.input-section .input-group .btn.btn-default{ font-size:1.9rem; top:0;}
 /* END search flyout */
 
 

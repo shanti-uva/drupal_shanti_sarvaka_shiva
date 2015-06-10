@@ -24,7 +24,7 @@
 		            ignoreInactiveItems: false,
 		          };
 		          // Get a reference to your grid items.
-		          var handler = $('.shanti-gallery2 li');
+		          var handler = $('.shanti-gallery li');
 		
 		          var $window = $(window);
 		          $window.resize(function() {
@@ -52,14 +52,14 @@
 		          	align: 'left',
 		            itemWidth: 160, // Optional min width of a grid item
 		            autoResize: true, // This will auto-update the layout when the browser window is resized.
-		            container: $('.shanti-gallery'), // Optional, used for some extra CSS styling
+		            container: $('.sn-explore-list'), // Optional, used for some extra CSS styling
 		            offset: 15, // Optional, the distance between grid items
 		            outerOffset: 0, // Optional the distance from grid to parent
 		            flexibleWidth: '30%', // Optional, the maximum width of a grid item
 		            ignoreInactiveItems: false
 		          };
 		          // Get a reference to your grid items.	
-		          var handler = $('.sn-explore-list .shanti-thumbnail');
+		          var handler = $('.sn-explore-list li');
 		
 		          var $window = $(window);
 		          $window.resize(function() {

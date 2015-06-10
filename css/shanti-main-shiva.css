@@ -11,6 +11,7 @@
 .nav-justified>li.active::after{ border-color: #5a9017;border-top-color: #5a9017;}
 .basecolor, /* older class name, deprecated */
 .navbar-brand:hover .site-slogan{ color:#5a9017 !important;}
+.navbar-brand:active .site-slogan{ color:#444 !important;}
  /* darker shades to define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
@@ -34,6 +35,60 @@
 	.nav-justified>li.active::before{ color:#5a9017 !important}
 }
 /**** End of Custom Colors ****/
+
+
+
+/* search flyout styles */
+.extruder-content h2{ margin: 1.5rem 0 1rem 1.5rem; font-size:1.32em;}
+.extruder-content ul{ margin:0.6rem 0 0.6rem 2rem !important; padding-bottom:1.3rem; padding-left: 2px;}
+.extruder-content ul li{ font-size: 1em !important;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;line-height:1.32em;padding: 0.2em 0.5em 0 0;}
+.extruder-content ul li:hover{ color:#111;}
+.extruder-content ul li::before{ 
+	background: #fff;
+	color: transparent;
+	font-family: 'shanticon';
+	content: '\e625';
+	font-size: 1.06em;
+	float: left;
+	position: relative;
+	top: 0.65rem;
+	border-radius: 50%;
+	background-clip: padding-box;
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	margin:0 9px 0 0;
+	-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);
+	box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);
+	border-collapse: separate;
+} 
+.extruder-content ul li:hover::before{ background:#888;-webkit-box-shadow:none;box-shadow:none;}
+
+.extruder-content ul li a{ color:#555;display:block;letter-spacing:0.02rem;}
+.extruder-content ul li a:hover{ color: rgb(207, 47, 30);}
+.extruder-content ul li a:active{ color:#555;}
+
+.extruder-content ul li a .facet-count{ color:#000;font-size:90%;letter-spacing:normal;}
+.extruder-content ul li a:hover .facet-count{ color: #333;}
+.extruder-content ul li a:active .facet-count{ color:#000; border-bottom-color:transparent !important;}
+.extruder-content ul li a .facet-count::before{ content:'/';margin-right:0.5rem;padding-left:0.5rem;}
+
+.front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
+
+/* .front .main-wrapper{ min-height: 250em;} */
+
+/* float pager left */
+.page-groups .pager{ 
+	text-align: left;
+	float: left;
+	margin-top:5rem;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+/* .content-section .tab-content:nth-of-type(1){ padding-top:0.5rem;}  perhaps move this to sarvaka */
+
 
 /***** Gallery Views ****/
 .shanti-gallery2 {

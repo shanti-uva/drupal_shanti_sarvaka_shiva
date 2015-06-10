@@ -100,22 +100,22 @@
               	 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
                  <?php print render($page['content']); ?>
               
-              <!-- All versus My Visualization Tabs -->
-              <div class="sn-tab-blocks">
-				        <ul class="nav nav-tabs nav-justified" role="tablist">
-				          <li class="active"><a href="#allvis" role="tab" data-toggle="tab" id="allvis-tab"><?php print t('All Visualizations'); ?></a></li>
-				          <li><a href="#myvis" role="tab" data-toggle="tab" id="myvis-tab"><?php print t('My Visualizations'); ?></a></li>
-				        </ul>
-				        <!-- Tab panes -->
-				        <div class="tab-content">
-				          <div class="tab-pane active" id="allvis">
-				          	<?php if(!empty($page['allvis'])) { print $page['allvis']['#markup']; } ?>
-				          </div>
-				          <div class="tab-pane" id="myvis">
-				          	<?php if(!empty($page['myvis']))  { print $page['myvis']['#markup']; } ?>
-				          </div>
-				        </div>
-				      </div>
+	              <!-- All versus My Visualization Tabs -->
+	              <div class="sn-tab-blocks">
+					        <ul class="nav nav-tabs nav-justified" role="tablist">
+					          <li class="active"><a href="#allvis" role="tab" data-toggle="tab" id="allvis-tab"><?php print t('All Visualizations'); ?></a></li>
+					          <li><a href="#myvis" role="tab" data-toggle="tab" id="myvis-tab"><?php print t('My Visualizations'); ?></a></li>
+					        </ul>
+					        <!-- Tab panes -->
+					        <div class="tab-content">
+					          <div class="tab-pane active" id="allvis">
+					          	<?php if(!empty($page['allvis'])) { print $page['allvis']['#markup']; } ?>
+					          </div>
+					          <div class="tab-pane" id="myvis">
+					          	<?php if(!empty($page['myvis']))  { print $page['myvis']['#markup']; } ?>
+					          </div>
+					        </div>
+					      </div>
               </article>             
             </div>
           </section>

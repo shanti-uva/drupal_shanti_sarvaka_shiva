@@ -304,30 +304,15 @@ div.block-facetapi:after {
 	margin-left: 10%;
 }
 div.block-facetapi h4 { font-size: 1.5rem; margin-top: 12px;}
-ul.facetapi-facetapi-links, ul.facetapi-shivanode-types { margin: 6px 0px 6px; padding-left: 2px;}
-ul.facetapi-facetapi-links li.leaf, ul.facetapi-shivanode-types li.leaf {
-	list-style-type: none;
-	list-style-image: none;
-	padding: 0px;
-	font-size: 1.3rem;
-}
-div.block-facetapi a.facetapi-limit-link {
-	font-size: 1.2rem;
-	text-align: right;
-	width: 70%;
-	display: block;
-	color: #9399c7;
-	margin: -6px 0px 3px;
-}
+ul.facetapi-facetapi-links, ul.facetapi-shivanode-types{ margin: 6px 0px 6px; padding-left: 2px;}
+ul.facetapi-facetapi-links li.leaf, ul.facetapi-shivanode-types li.leaf{ list-style-type: none;list-style-image: none;	padding: 0px;font-size: 1.3rem;}
+div.block-facetapi a.facetapi-limit-link{ font-size:1.2rem;text-align:right;width: 70%;display: block;color: #9399c7;margin: -6px 0px 3px;}
 div.block-facetapi a.facetapi-limit-link:hover { color: #454fa4; }
 
-.btn.btn-icon.shivanode-btn span:last-child { line-height: 1.5em; }
-.btn.btn-icon.shivanode-btn a.sharelink {color: white;}
+.btn.btn-icon.shivanode-btn span:last-child{ line-height: 1.5em; }
+.btn.btn-icon.shivanode-btn a.sharelink{ color: white;}
 
-ul.shivanode-info li {
-	list-style-type: none;
-	margin-bottom: 6px;
-}
+ul.shivanode-info li { list-style-type: none; margin-bottom: 6px;}
 ul.shivanode-info li .icon {display: inline-block; padding-right: 12px;}
 ul.shivanode-info li div { display: inline-block; }
 
@@ -365,14 +350,36 @@ ul.shivanode-info li div { display: inline-block; }
 .extruder-content ul li a:active .facet-count{ color:#000; border-bottom-color:transparent !important;}
 .extruder-content ul li a .facet-count::before{ content:'/';margin-right:0.5rem;padding-left:0.5rem;}
 
+.input-section .search-group{ height:40px;}
 .advanced-view{ padding-left: 0.8rem;}
+.input-section .input-group input{ top:0;}
 .input-section .input-group .btn.btn-default{ font-size:1.9rem; top:0;}
+
+.input-group .form-item{ margin-top:0;}
+.contextual-links-wrapper{ top:0;}
+.text.ui-resizable{ border:1px solid #e0e0e0;}
 /* END search flyout */
 
 
 
 
-
+.kmap_search_term_button{ 
+	background:#5b68ce;
+	border: none;
+	font-weight: normal;
+	text-transform: uppercase;
+	display: inline-block;
+	white-space: nowrap;
+	border-radius: .25em;
+	background-clip: padding-box;
+	color: #eee;
+	padding: .75em 2em .62em;
+	margin: .75em;
+	line-height: 2em;
+	font-size: .68em;
+	letter-spacing: .06em;
+	font-family: 'museo-sans-500',helvetica,arial,sans-serif;
+}
 
 
 

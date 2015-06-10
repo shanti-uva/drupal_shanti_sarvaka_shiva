@@ -29,7 +29,7 @@
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
 .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.6);}
-.shanti-thumbnail:hover .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1, 0.9);}
+.shanti-thumbnail:hover .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1, 0.7);}
 @media screen and (min-width: 768px) { .nav-justified>li.active::before{ color:#5a9017 !important} }
 /**** End of Custom Colors ****/
 
@@ -169,12 +169,12 @@ ul.shivanode-info li div { display: inline-block; }
 .extruder-content ul li a .facet-count::before{ content:'/';margin-right:0.5rem;padding-left:0.5rem;}
 
 .input-section{ border:none;}
-.input-section .search-group{ height:40px;}
+.input-section .search-group{ height:50px;}
 .advanced-view{ padding-left: 0.8rem;}
 .input-section .input-group input{ top:0;}
 .input-section .input-group .btn.btn-default{ font-size:1.9rem; top:0;}
 
-.input-group .form-item{ margin-top:0;}
+.input-group .form-item{ margin:0;}
 .contextual-links-wrapper{ top:0;}
 .text.ui-resizable{ border:1px solid #e0e0e0;}
 /* END search flyout */

@@ -40,7 +40,7 @@
 
 /* search flyout styles */
 .extruder-content h2{ margin-left:1.25rem;}
-.extruder-content ul{ margin-left:2rem;}
+.extruder-content ul{ margin-left:1.75rem !important;}
 
 .front .field-type-text-with-summary p{ margin-top:0;}
 

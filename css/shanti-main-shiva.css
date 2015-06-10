@@ -179,7 +179,7 @@ ul.shivanode-info li div { display: inline-block; }
 /* END search flyout */
 
 .btn.btn-primary.form-submit.btn-delete.btn-sm.btn-icon{ width:2.5rem;height:2.5rem;font-size:0.68em;padding:0;margin-left: 0.5rem;}
-.btn.btn-primary.form-submit.btn-delete.btn-sm.btn-icon .icon::before{ position:relative;top:-0.5rem;left:-0.5rem;}
+.btn.btn-primary.form-submit.btn-delete.btn-sm.btn-icon .icon::before{ position:relative;top:-0.5rem;left:-0.7rem;}
 
 .kmap_search_term_button{ background:#5b68ce;border: none !important;font-weight: normal;text-transform: uppercase;display: inline-block;white-space: nowrap;border-radius: 0.25em;background-clip:padding-box;color: #eee;padding: 0.4rem 1.3rem 0.2rem !important;position:relative;top:-0.2rem;margin-top:0;margin-left:1rem;line-height: 2em;font-size: 0.82em;letter-spacing: 0.06em;font-family: 'museo-sans-500',helvetica,arial,sans-serif;}
 .kmap_search_term_button:hover{ color:#fff;background:#4850bd;}

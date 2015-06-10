@@ -39,32 +39,32 @@
 
 
 /* search flyout styles */
-.extruder-content h2{ margin-left:1.25rem;font-size:1.32em;}
-.extruder-content ul{ margin-left:1.75rem !important;}
-.extruder-content ul li{ }
+.extruder-content h2{ margin: 1.5rem 0 1rem 1.5rem; font-size:1.32em;}
+.extruder-content ul{ margin:0.6rem 0 0.6rem 2rem !important; padding-bottom:1.3rem; padding-left: 2px;}
+.extruder-content ul li{ font-size: 1.06em !important;font-family:'droid-serif',serif;line-height:1.32em;padding: 0.2em 0.5em 0 0;}
 .extruder-content ul li:hover{ color:#111;}
 .extruder-content ul li::before{ 
 	background: #fff;
 	color: transparent;
 	font-family: 'shanticon';
 	content: '\e625';
-	font-size: 1em;
+	font-size: 1.06em;
 	float: left;
 	position: relative;
-	top: 0.6rem;
-	right: 0.2rem;
+	top: 0.65rem;
 	border-radius: 50%;
 	background-clip: padding-box;
-	width: 9px;
-	height: 9px;
-	display: block;
-	margin-right: 7px;
-	-webkit-box-shadow: 0 0 2px 1px #aaa;
-	box-shadow: 0 0 2px 1px #aaa;
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	margin:0 9px 0 0;
+	-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);
+	box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);
 	border-collapse: separate;
 } 
-.extruder-content ul li:hover::before{ background: #777;-webkit-box-shadow: none;box-shadow: none;}
+.extruder-content ul li:hover::before{ background:#888;-webkit-box-shadow:none;box-shadow:none;}
 
+.extruder-content ul li a{ letter-spacing:0.05rem;}
 
 .front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
 

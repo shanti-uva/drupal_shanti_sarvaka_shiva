@@ -42,6 +42,9 @@
 /* .content-section .tab-content:nth-of-type(1){ padding-top:0.5rem;}  perhaps move this to sarvaka */
 
 /***** Gallery Views ****/
+#myvis.tab-pane,
+#allvis.tab-pane{ padding-bottom:10rem;}
+
 .shanti-gallery2 { width: 100%;margin: 0;padding: 0;position: relative;list-style-type: none;-webkit-margin-before: 0;-webkit-margin-after: 0;-webkit-margin-start: 0;-webkit-margin-end: 0;-webkit-padding-start: 0;}
 .view ul.shanti-gallery {margin-top: 2rem;}
 .front .main-content #block-system-main {margin-bottom: 2rem;}
@@ -153,6 +156,9 @@ ul.shivanode-info li .icon {display: inline-block; padding-right: 12px;}
 ul.shivanode-info li div { display: inline-block; }
 
 
+
+
+
 /* search flyout styles */
 .extruder-content h2{ margin: 1.5rem 0 1rem 1.75rem; font-size:1.38em;}
 .extruder-content ul{ margin:0.6rem 0 0.6rem 2rem !important; padding-bottom:1.3rem; padding-left: 2px;}
@@ -189,12 +195,21 @@ ul.shivanode-info li div { display: inline-block; }
 .text.ui-resizable{ border:1px solid #e0e0e0;}
 /* END search flyout */
 
+
+
+
+
+
+
+/* admin and editing */
+
 .btn.btn-primary.form-submit.btn-delete.btn-sm.btn-icon{ width:2.5rem;height:2.5rem;font-size:0.68em;padding:0;margin-left: 0.5rem;}
 .btn.btn-primary.form-submit.btn-delete.btn-sm.btn-icon .icon::before{ position:relative;top:-0.5rem;left:-0.6rem;}
 
 .kmap_search_term_button{ background:#5b68ce;border: none !important;font-weight: normal;text-transform: uppercase;display: inline-block;white-space: nowrap;border-radius: 0.25em;background-clip:padding-box;color: #eee;padding: 0.4rem 1.3rem 0.2rem !important;position:relative;top:-0.2rem;margin-top:0;margin-left:1rem;line-height: 2em;font-size: 0.82em;letter-spacing: 0.06em;font-family: 'museo-sans-500',helvetica,arial,sans-serif;}
 .kmap_search_term_button:hover{ color:#fff;background:#4850bd;}
 .kmap_search_term_button:active{ background:#5b68ce;}
+
 
 .form-item-field-places-kmap-und-kmap-search-term label,
 .form-item-field-subjects-kmap-und-kmap-search-term label{ margin-bottom:0.3rem;margin-left:1.5rem;display:block;width:100%;}

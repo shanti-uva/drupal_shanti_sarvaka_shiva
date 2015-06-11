@@ -128,6 +128,7 @@ body.page-node-share.lightbox-processed{ margin:0px !important;}
 .page-groups .content-section .tab-content,
 .front .content-section .tab-content{ max-width:1000px;margin:0 auto;}
 
+.page-all-groups .views-table.cols-2{ width:98%;margin:1.5rem auto 0;}
 
 
 
@@ -204,8 +205,6 @@ ul.shivanode-info li div { display: inline-block; }
 .pane-menu-menu-groups ul.menu li a::before{ content:''; width:0.7rem;height:0.7rem;background:transparent;border:2px solid #5b68ce;display:inline-block; border-radius:50%; margin-right:8px;position:relative;top:-0.1rem;}
 .pane-menu-menu-groups ul.menu li a:hover::before{ background: #5b68ce;}
 .pane-menu-menu-groups ul.menu li a.active::before{ background: #5b68ce;}
-
-
 
 
 /* admin and editing */

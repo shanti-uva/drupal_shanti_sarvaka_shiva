@@ -64,7 +64,7 @@
 .page-explore li.shanti-thumbnail .title {font-weight: bold;}
 .page-explore li.shanti-thumbnail .links {padding: 6px;}
 .page-explore li.shanti-thumbnail .links li {list-style-type: none;}
-.page-create .shanti-thumbnail .title { font-size: 1.5rem;font-weight: bold;margin:1rem auto;text-align:center;letter-spacing:1px;font-family:'museo-sans-700',arial,sans-serif;}
+.page-create .shanti-thumbnail .title { font-size: 1.25em;margin:1rem auto;text-align:center;letter-spacing:1px;font-family:'museo-sans-500',arial,sans-serif;}
 
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}

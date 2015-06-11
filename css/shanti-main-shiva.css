@@ -193,7 +193,14 @@ ul.shivanode-info li div { display: inline-block; }
 /* END search flyout */
 
 
+.pane-menu-menu-groups ul.menu li{ list-style-type:none;}
+.pane-menu-menu-groups ul.menu li img{ display:none;width:0;height:0;}
+.pane-menu-menu-groups ul.menu li a{ background: transparent;font-weight:normal;display:block;}
+.pane-menu-menu-groups ul.menu li a.active{ font-weight:bold;}
 
+.pane-menu-menu-groups ul.menu li a::before{ content:''; width:0.7rem;height:0.7rem;background:transparent;border:2px solid #5b68ce;display:inline-block; border-radius:50%; margin-right:8px;position:relative;top:-0.1rem;}
+.pane-menu-menu-groups ul.menu li a:hover::before{ background: #5b68ce;}
+.pane-menu-menu-groups ul.menu li a.active::before{ background: #5b68ce;}
 
 
 

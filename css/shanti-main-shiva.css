@@ -185,8 +185,8 @@ ul.shivanode-info li div { display: inline-block; }
 .input-section form{ margin-top:0.5rem;}
 .advanced-view{ padding-left: 0.8rem;}
 .input-section .input-group input{ top:0;}
-.input-section .input-group .btn.btn-default{ font-size:1.6rem; top:0;}
-.input-section .input-group .btn.btn-default .icon::before{ position:relative;top:0.2rem;}
+.input-section .input-group .btn.btn-default{ font-size:1.5rem; top:0;}
+.input-section .input-group .btn.btn-default .icon{ position:relative;top:0.3rem;}
 
 .contextual-links-wrapper{ top:0;}
 .text.ui-resizable{ border:1px solid #e0e0e0;}

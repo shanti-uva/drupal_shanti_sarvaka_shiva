@@ -168,7 +168,7 @@ ul.shivanode-info li div { display: inline-block; }
 .extruder-content ul li a .facet-count{ color:#000;font-size:80%;letter-spacing:normal;}
 .extruder-content ul li a:hover .facet-count{ color: #000;}
 .extruder-content ul li a:active .facet-count{ color:#000; border-bottom-color:transparent !important;}
-.extruder-content ul li a .facet-count::before{ content:'_ #';margin-right:0;padding-left:0.2rem;}
+.extruder-content ul li a .facet-count::before{ content:'_';margin-right:0;padding-left:0.2rem;}
 
 .extruder-content div.block-facetapi{ margin-top:1rem;}
 .extruder-content div.block-facetapi::after{ display:none;}

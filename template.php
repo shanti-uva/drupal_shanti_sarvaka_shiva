@@ -174,6 +174,24 @@ function sarvaka_shiva_preprocess_search_result(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_views_view_fields
+ * 
+ * Removes width/height settings from thumb images in shiva_visuals_solr view. 
+ * Not sure where these are coming from.
+ * 
+ * TODO: Find out where height and width settings are coming from for thumbnails and remove. Is it legacy?
+ */
+function sarvaka_shiva_preprocess_views_view_fields(&$vars) {
+	$view = $vars['view'];
+	if ($view->name == 'shiva_visuals_solr') {
+		$imgurl = $vars['fields']['field_image']->content;
+		$imgurl = preg_replace('/height="[^"]+"/','', $imgurl);
+		$imgurl = preg_replace('/width="[^"]+"/','', $imgurl);
+		$vars['fields']['field_image']->content = $imgurl;
+	}
+}
+
+/**
  * Implements theme_field for shivadata_source_url
  * 	Gives link to open in separate window followed by Iframe with showing the data. 
  * 	Currently only shows when it's a google doc. 

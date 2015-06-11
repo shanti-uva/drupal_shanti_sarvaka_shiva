@@ -182,6 +182,7 @@ ul.shivanode-info li div { display: inline-block; }
 
 .input-section{ border:none;}
 .input-section .search-group{ height:50px;}
+.input-section form{ margin-top:0.5rem;}
 .advanced-view{ padding-left: 0.8rem;}
 .input-section .input-group input{ top:0;}
 .input-section .input-group .btn.btn-default{ font-size:1.9rem; top:0;}

@@ -38,6 +38,11 @@
 /* float pager left */
 .page-groups .pager{ text-align: left;float: left;margin-top:5rem;position: relative;top: 0;right: 0;}
 
+.page-explore .panel-body .sn-explore-list{ padding-left:0;}
+.page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
+
+
+
 /* .content-section .tab-content:nth-of-type(1){ padding-top:0.5rem;}  perhaps move this to sarvaka */
 
 /***** Gallery Views ****/
@@ -119,14 +124,6 @@ body.page-node-share.lightbox-processed{ margin:0px !important;}
 
 
 
-.page-explore .panel-body .sn-explore-list{ padding-left:0;}
-
-.page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
-
-
-
-
-
 /* WIDTH CONTROL */
 .page-node-edit form#page-node-form.node-form.node-page-form,
 .page-groups .content-section .tab-content,
@@ -171,7 +168,7 @@ ul.shivanode-info li div { display: inline-block; }
 .extruder-content ul li a .facet-count{ color:#000;font-size:80%;letter-spacing:normal;}
 .extruder-content ul li a:hover .facet-count{ color: #000;}
 .extruder-content ul li a:active .facet-count{ color:#000; border-bottom-color:transparent !important;}
-.extruder-content ul li a .facet-count::before{ content:'/';margin-right:0.5rem;padding-left:0.5rem;}
+.extruder-content ul li a .facet-count::before{ content:'_ #';margin-right:0;padding-left:0.2rem;}
 
 .extruder-content div.block-facetapi{ margin-top:1rem;}
 .extruder-content div.block-facetapi::after{ display:none;}

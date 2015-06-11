@@ -32,6 +32,7 @@
 @media screen and (min-width: 768px) { .nav-justified>li.active::before{ color:#5a9017 !important} }
 /**** End of Custom Colors ****/
 
+h1, h2, h3{ font-size:1.56em;} /* testing */
 
 .front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
 

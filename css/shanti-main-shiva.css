@@ -192,7 +192,7 @@ ul.shivanode-info li div { display: inline-block; }
 .text.ui-resizable{ border:1px solid #e0e0e0;}
 /* END search flyout */
 
-
+.pane-menu-menu-groups ul.menu,
 .pane-menu-menu-groups ul.menu li{ list-style-type:none;}
 .pane-menu-menu-groups ul.menu li img{ display:none;width:0;height:0;}
 .pane-menu-menu-groups ul.menu li a{ background: transparent;font-weight:normal;display:block;}

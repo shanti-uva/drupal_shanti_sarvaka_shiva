@@ -180,13 +180,14 @@ ul.shivanode-info li div { display: inline-block; }
 }
 
 .input-section{ border:none;}
+.input-group .form-item{ margin:0;}
 .input-section .search-group{ height:50px;}
 .input-section form{ margin-top:0.5rem;}
 .advanced-view{ padding-left: 0.8rem;}
 .input-section .input-group input{ top:0;}
-.input-section .input-group .btn.btn-default{ font-size:1.9rem; top:0;}
+.input-section .input-group .btn.btn-default{ font-size:1.7rem; top:0;}
+.input-section .input-group .btn.btn-default .icon{ top:0.3rem;}
 
-.input-group .form-item{ margin:0;}
 .contextual-links-wrapper{ top:0;}
 .text.ui-resizable{ border:1px solid #e0e0e0;}
 /* END search flyout */

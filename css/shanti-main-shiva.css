@@ -7,7 +7,8 @@
 .nav-justified>li.active, /* large tabs juststified */
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:active{ background-color:#5a9017 !important;}
+.nav-justified>li.active a:active,
+.shanti-thumbnail-image .icon{ background-color:#5a9017 !important;}
 .nav-justified>li.active::after{ border-color: #5a9017;border-top-color: #5a9017;}
 .basecolor, /* older class name, deprecated */
 .navbar-brand:hover .site-slogan{ color:#5a9017 !important;}
@@ -28,8 +29,6 @@
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active{ border-top-color: rgb(72,107,1) !important;}
-.shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1,0.6);}
-.shanti-thumbnail:hover .shanti-thumbnail-image.shanti-field-visuals .icon{ background: rgba(72,107,1, 0.7);}
 @media screen and (min-width: 768px) { .nav-justified>li.active::before{ color:#5a9017 !important} }
 /**** End of Custom Colors ****/
 

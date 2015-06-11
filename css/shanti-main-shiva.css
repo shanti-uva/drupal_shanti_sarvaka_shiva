@@ -58,7 +58,7 @@
 .shanti-thumbnail-field .shanti-field-content a { display: inline; }
 
 /**** Explore and Create Thumbs ****/
-.page-explore li.shanti-thumbnail, .page-create li.shanti-thumbnail {height: 200px;font-size: 1.75rem;margin: 12px;}
+.page-explore li.shanti-thumbnail, .page-create li.shanti-thumbnail {height: 200px;font-size: 1.75rem;margin:0.75rem 0.75%;}
 .page-create li.shanti-thumbnail .body-wrap {height: 40px !important;overflow: hidden;}
 .page-explore li.shanti-thumbnail .shanti-thumbnail-image {height: 11rem;}
 .page-explore li.shanti-thumbnail .shanti-thumbnail-image img {height: auto;}

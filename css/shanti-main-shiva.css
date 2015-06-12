@@ -245,9 +245,9 @@ ul.shivanode-info li div { display: inline-block; }
 
 .field-widget-kmap-tree-picker- .kmap-item{ font-size:0.88em;}
 
-/* page at dev tab > token tab */
+/* page at dev tab > token tab
 table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-processed.treeTable{ max-width:1050px !important;margin:0 auto 20rem;}
-
+ */
 
 
 /**** Share window tabs ****/

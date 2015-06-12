@@ -42,6 +42,10 @@ h1, h2, h3{ font-size:1.56em;} /* testing */
 
 .page-explore .panel-body .sn-explore-list{ padding-left:0;}
 
+/* page at dev tab > token tab */
+table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-processed.treeTable{ max-width:1050px;margin:0 auto 20rem;}
+
+
 .content .field-accordion:nth-of-type(1){ margin-top:1rem;}
 
 /* .content-section .tab-content:nth-of-type(1){ padding-top:0.5rem;}  perhaps move this to sarvaka */

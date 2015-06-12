@@ -58,7 +58,6 @@ h1, h2, h3{ font-size:1.56em;} /* testing */
 .front .main-content #block-system-main {margin-bottom: 2rem;}
 
 /**** Thumbnails ****/
-.shanti-field-agent span::before{font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
 
 /* .shanti-thumbnail-field .shanti-field-content a { display: inline; } */
 
@@ -86,6 +85,10 @@ a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margi
 .shanti-field-created span::before{content:'\e60c';margin-right:0.6rem;} */
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+
+.shanti-field-agent span::before{ font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
+
+.shanti-field-type span::before{ font-family:'shanticon';content: "\e63c";font-size:120%;font-weight:normal;position:relative;left:0.1rem;top:0.1rem;margin-right:0.3rem;}
 
 
 

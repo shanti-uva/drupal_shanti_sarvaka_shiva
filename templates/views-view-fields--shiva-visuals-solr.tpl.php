@@ -40,17 +40,17 @@
   
   <div class="shanti-thumbnail-info">
 		<div class="body-wrap">
-			<div class="shanti-thumbnail-field shanti-field-title">
+			<div class="shanti-thumbnail-field clearfix shanti-field-title">
 				<span class="field-content"><a href="<?php print url('node/' . $fields['nid']->content); ?>" class="shanti-thumbnail-link"><?php print $fields['title']->content; ?></a></span>
 			</div>
 			
-			<div class="shanti-thumbnail-field shanti-field-type">
+			<div class="shanti-thumbnail-field clearfix shanti-field-type">
 				<span class="shanti-field-content"><?php  print $fields['shivanode_subtype']->content; ?></span>
 			</div>
-			<div class="shanti-thumbnail-field shanti-field-agent">
+			<div class="shanti-thumbnail-field clearfix shanti-field-agent">
 				<span class="shanti-field-content"><?php  print $fields['author_field_lname']->content; ?></span>
 			</div>
-			<div class="shanti-thumbnail-field shanti-field-created">
+			<div class="shanti-thumbnail-field clearfix shanti-field-created">
 				<span class="shanti-field-content"><?php  print $fields['created']->content; ?></span>
 			</div>
 		

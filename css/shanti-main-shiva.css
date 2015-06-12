@@ -42,9 +42,6 @@ h1, h2, h3{ font-size:1.56em;} /* testing */
 
 .page-explore .panel-body .sn-explore-list{ padding-left:0;}
 
-/* page at dev tab > token tab */
-table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-processed.treeTable{ max-width:1050px;margin:0 auto 20rem;}
-
 
 .content .field-accordion:nth-of-type(1){ margin-top:1rem;}
 
@@ -247,6 +244,9 @@ ul.shivanode-info li div { display: inline-block; }
 .form-item-field-subjects-kmap-und-kmap-search-term input{ float:left;}
 
 .field-widget-kmap-tree-picker- .kmap-item{ font-size:0.88em;}
+
+/* page at dev tab > token tab */
+table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-processed.treeTable{ max-width:1050px !important;margin:0 auto 20rem;}
 
 
 

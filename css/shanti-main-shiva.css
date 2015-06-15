@@ -73,6 +73,8 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .shanti-gallery2 a,
 .sn-explore-list a{color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
 
+.page-create .shanti-thumbnail{ height: 14em;}
+
 .page-create .shanti-thumbnail,
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
 

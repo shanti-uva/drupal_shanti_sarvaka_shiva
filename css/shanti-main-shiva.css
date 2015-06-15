@@ -97,6 +97,13 @@ font-weight: bold;
 font-size: 1.32em;
 }
 
+.page-create .shanti-thumbnail .body-wrap .title{ 
+	font-weight: normal;
+font-size: 1.44em;
+font-family:'museo-sans-500',helvetica,arial,sans-serif;
+}
+
+
 
 /* .shanti-field-duration span::before{content:'\e61c';}
 .shanti-field-created span::before{content:'\e60c';margin-right:0.6rem;} */

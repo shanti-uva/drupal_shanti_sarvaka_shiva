@@ -73,6 +73,7 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .shanti-gallery2 a,
 .sn-explore-list a{color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
 
+.page-explore .shanti-create,
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
 
 /* smaller link fonts */
@@ -86,8 +87,10 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .shanti-thumbnail a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margin:0;} /* thumbnail title */ 
 
 .page-explore .shanti-thumbnail .body-wrap ul.links li a{ font-size:1.25em;}
+
+.page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;
-margin:.5rem auto 0.5rem;
+margin:.5rem auto;
 color:black;
 font-family:'droidserif',serif;
 font-weight: bold;

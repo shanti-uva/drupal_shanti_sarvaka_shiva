@@ -78,7 +78,7 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .page-create .shanti-thumbnail,
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
 
-.shanti-thumbnail-image img{ margin-top:1.5rem;}
+.shanti-thumbnail-image img{ margin:1.5rem auto;}
 
 /* smaller link fonts */
 .shanti-thumbnail .body-wrap{padding-top:0.7rem;}

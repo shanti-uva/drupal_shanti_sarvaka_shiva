@@ -35,6 +35,11 @@
 h1, h2, h3{ font-size:1.5em;} /* testing */
 .h1, .h2, .h3, h1, h2, h3{ }
 
+.page-explore .main-col h1:nth-of-type(1), 
+.page-explore .main-col h2:nth-of-type(1), 
+.page-explore .main-col h3:nth-of-type(1){ margin-top:0;}
+
+
 .front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
 
 /* float pager left */

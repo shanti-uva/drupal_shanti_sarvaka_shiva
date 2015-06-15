@@ -77,7 +77,7 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 
 /* smaller link fonts */
 .shanti-thumbnail .body-wrap{padding-top:0.7rem;}
-.shanti-thumbnail .body-wrap a{ font-size:1.06em;line-height:1.88em;}
+.shanti-thumbnail .body-wrap a{ font-size:1.06em;line-height:2em;}
 .shanti-thumbnail .body-wrap a:hover,
 .shanti-thumbnail .body-wrap a:active{text-decoration:underline;}
 

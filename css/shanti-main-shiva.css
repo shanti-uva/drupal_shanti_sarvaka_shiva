@@ -93,30 +93,12 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:black;font-weight: normal;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 
-
-/* .shanti-field-duration span::before{content:'\e61c';}
-.shanti-field-created span::before{content:'\e60c';margin-right:0.6rem;} */
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-
-.shanti-field-agent span::before{ font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;top:0.1rem;margin-right:0.4rem; float:left;/* force agent text as anchor tag to not wrap */ }
-.shanti-field-type span::before{ font-family:'shanticon';content: "\e63c";font-size:120%;font-weight:normal;position:relative;top:0.2rem;margin-right:0.4rem;}
-
-/**** Explore and Create Thumbs 
-.page-explore li.shanti-thumbnail, 
-.page-create li.shanti-thumbnail {height: 200px;font-size: 1.75rem; MARGIN ----- }
-.page-create li.shanti-thumbnail .body-wrap {height: 40px !important;overflow: hidden;}
-
-.page-explore li.shanti-thumbnail .shanti-thumbnail-image {height: 11rem;}
-.page-explore li.shanti-thumbnail .shanti-thumbnail-image img {height: auto;}
-.page-explore li.shanti-thumbnail .title {font-weight: bold;}
-.page-explore li.shanti-thumbnail .links {padding: 6px;}
-.page-explore li.shanti-thumbnail .links li {list-style-type: none;}
-.page-create .shanti-thumbnail .title { font-size: 1.25em;margin:1rem auto;text-align:center;letter-spacing:0.05rem;font-family:'museo-sans-500',arial,sans-serif;}
-****/
-
-
-
+.shanti-field-agent span::before,
+.shanti-field-type span::before{ font-family:'shanticon'; font-size:130%; font-weight:normal;position:relative;top:0.1rem;margin-right:0.4rem; }
+.shanti-field-agent span::before{ content:'\e600';float:left;/* force agent text as anchor tag to not wrap */ }
+.shanti-field-type span::before{ content: "\e63c";}
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}
 /**** The Popup share block ****/

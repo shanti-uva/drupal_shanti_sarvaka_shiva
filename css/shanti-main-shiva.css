@@ -84,6 +84,15 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .shanti-thumbnail .body-wrap ul.links li a,
 .shanti-thumbnail a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margin:0;} /* thumbnail title */ 
 
+.shanti-thumbnail .body-wrap ul.links li a{ font-size:1.38em;}
+
+.shanti-thumbnail .body-wrap .title{ text-align:center;
+margin:.5rem auto 0.5rem;
+color:black;
+font-family:'droidserif',serif;
+font-weight: normal;
+font-size: 1.44em;}
+
 
 /* .shanti-field-duration span::before{content:'\e61c';}
 .shanti-field-created span::before{content:'\e60c';margin-right:0.6rem;} */

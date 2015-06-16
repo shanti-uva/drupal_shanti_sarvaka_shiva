@@ -44,9 +44,6 @@
 				<span class="field-content"><a href="<?php print url('node/' . $fields['nid']->content); ?>" class="shanti-thumbnail-link"><?php print $fields['title']->content; ?></a></span>
 			</div>
 			
-			<div class="shanti-thumbnail-field clearfix shanti-field-type">
-				<span class="shanti-field-content"><?php  print $fields['shivanode_subtype']->content; ?></span>
-			</div>
 			<div class="shanti-thumbnail-field clearfix shanti-field-agent">
 				<span class="shanti-field-content"><?php  print $fields['author_field_lname']->content; ?></span>
 			</div>
@@ -55,9 +52,11 @@
 			</div>
 		
 		</div> <!-- end body-wrap -->
-<!--
+
 		<div class="footer-wrap">
-	
+			<div class="shanti-thumbnail-field clearfix shanti-field-type">
+				<span class="shanti-field-content"><?php  print $fields['shivanode_subtype']->content; ?></span>
+			</div>
 		</div> <!-- end footer -->
 	</div> <!-- end shanti-thumbnail-info -->
 </li> <!-- end shanti-thumbnail -->

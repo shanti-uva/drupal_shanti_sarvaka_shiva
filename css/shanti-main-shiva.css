@@ -75,10 +75,10 @@
 .page-create .shanti-thumbnail,
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
 
-.shanti-thumbnail-image img{ margin:1.5rem auto;}
+.shanti-thumbnail-image img{ margin:1.25rem auto; height:7rem;}
 
 /* smaller link fonts */
-.shanti-thumbnail .body-wrap{padding-top:0.7rem;}
+.shanti-thumbnail .body-wrap{padding-top:0.5rem;}
 .shanti-thumbnail .body-wrap a{ font-size:1.06em;line-height:2em;}
 .shanti-thumbnail .body-wrap a:hover,
 .shanti-thumbnail .body-wrap a:active{text-decoration:underline;}
@@ -97,6 +97,8 @@
 .shanti-field-type span::before{ font-family:'shanticon';font-size:130%;font-weight:normal;position:relative;top:0.1rem;margin-right:0.5rem; }
 .shanti-field-agent span::before{ content:'\e600';float:left;/* force agent text as anchor tag to not wrap */ }
 .shanti-field-type span::before{ content: "\e63c";position:relative;top:0.3rem;right:.2rem;}
+
+.page-explore .shanti-thumbnail-image{ background:#222;}
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}
 

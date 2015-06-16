@@ -96,7 +96,7 @@
   font-size: 1.32em;
 }
 .sn-explore-list ul li.sn-create-link a:hover{ color: #fff; text-decoration:none; opacity:1;}
-.sn-explore-list ul li.sn-create-link a:active{ color: #3c47b7;}
+.sn-explore-list ul li.sn-create-link a:active{ color: #fff; background: #3c47b7;}
 
 
 .sn-create-link .shanti-thumbnail-info a{ 

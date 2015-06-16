@@ -78,10 +78,11 @@
 .shanti-thumbnail-image img{ margin:1.25rem auto;}
 
 .page-create .shanti-thumbnail .body-wrap .title,
-.page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:black;font-weight: bold;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
+.page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:#555;font-weight: bold;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
 
 .page-explore .shanti-thumbnail .body-wrap .title{ }
 .page-create .shanti-thumbnail .body-wrap .title{ margin-top:0;white-space:normal;}
+.page-create .shanti-thumbnail:hover .body-wrap .title{ color: rgb(207, 47, 30);}
 
 /* smaller link fonts */
 .shanti-thumbnail .body-wrap{padding-top:0.5rem;}
@@ -94,7 +95,6 @@
 .shanti-thumbnail a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margin:0;} /* thumbnail title */ 
 
 .page-explore .shanti-thumbnail .body-wrap ul.links li a{ font-size:1.32em;font-weight:normal;}
-
 
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}

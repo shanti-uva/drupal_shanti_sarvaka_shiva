@@ -16,7 +16,6 @@
  /* darker shades to define details */
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
-.main-content .selectpicker .caret::before,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active,
@@ -32,23 +31,24 @@
 @media screen and (min-width: 768px) { .nav-justified>li.active::before{ color:#5a9017 !important} }
 /**** End of Custom Colors ****/
 
-h1, h2, h3{ font-size:1.5em;} /* testing */
-.h1, .h2, .h3, h1, h2, h3{ }
-
 .front .field-type-text-with-summary p{ margin-top:0;padding:0 1rem;}
+
+.page-explore .main-col h1:nth-of-type(1), 
+.page-explore .main-col h2:nth-of-type(1), 
+.page-explore .main-col h3:nth-of-type(1){ margin-top:0;}
+
+.page-explore .panel-body .sn-explore-list{ padding-left:0;}
 
 /* float pager left */
 .page-groups .pager{ text-align: left;float: left;margin-top:5rem;position: relative;top: 0;right: 0;}
 .page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}
 
-.page-explore .panel-body .sn-explore-list{ padding-left:0;}
-
 
 .content .field-accordion:nth-of-type(1){ margin-top:1rem;}
-
 /* .content-section .tab-content:nth-of-type(1){ padding-top:0.5rem;}  perhaps move this to sarvaka */
 
 
+.menu-main-desk .form-group.last:active{ background:#eee;color:#222;}
 
 
 
@@ -56,7 +56,7 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 /* #myvis.tab-pane,
 #allvis.tab-pane{ padding-bottom:10rem;}
 */
-.front .main-content #block-system-main {margin-bottom: 2rem;}
+.front .main-content #block-system-main{ margin-bottom: 2rem;}
 
 
 /**** Thumbnails ****/
@@ -69,45 +69,33 @@ h1, h2, h3{ font-size:1.5em;} /* testing */
 .shanti-gallery2 a,
 .sn-explore-list a{color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
 
+.page-create .shanti-thumbnail{ height: 14em;}
+
+.shanti-gallery2 .shanti-thumbnail,
+.page-create .shanti-thumbnail,
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
 
+.shanti-thumbnail-image img{ margin:1.5rem auto;}
+
 /* smaller link fonts */
-.shanti-thumbnail .body-wrap a{font-size:0.93em;line-height: 1.88em;}
+.shanti-thumbnail .body-wrap{padding-top:0.7rem;}
+.shanti-thumbnail .body-wrap a{ font-size:1.06em;line-height:2em;}
 .shanti-thumbnail .body-wrap a:hover,
 .shanti-thumbnail .body-wrap a:active{text-decoration:underline;}
 
 .shanti-thumbnail .body-wrap .title,
 .shanti-thumbnail .body-wrap ul.links li a,
-.shanti-thumbnail a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margin:0.2rem 0;} /* thumbnail title */ 
+.shanti-thumbnail a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margin:0;} /* thumbnail title */ 
+.page-explore .shanti-thumbnail .body-wrap ul.links li a{ font-size:1.25em;}
+.page-create .shanti-thumbnail .body-wrap .title,
+.page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:black;font-weight: normal;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 
-
-/* .shanti-field-duration span::before{content:'\e61c';}
-.shanti-field-created span::before{content:'\e60c';margin-right:0.6rem;} */
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-
-.shanti-field-agent span::before{ font-family:'shanticon';content:'\e600';font-size:120%;font-weight:normal;position:relative;top:0;margin-right:0.4rem; float:left;/* force agent text as anchor tag to not wrap */ }
-.shanti-field-type span::before{ font-family:'shanticon';content: "\e63c";font-size:120%;font-weight:normal;position:relative;top:0;margin-right:0.4rem;}
-
-
-
-/**** Explore and Create Thumbs 
-.page-explore li.shanti-thumbnail, 
-.page-create li.shanti-thumbnail {height: 200px;font-size: 1.75rem; MARGIN ----- }
-.page-create li.shanti-thumbnail .body-wrap {height: 40px !important;overflow: hidden;}
-
-.page-explore li.shanti-thumbnail .shanti-thumbnail-image {height: 11rem;}
-.page-explore li.shanti-thumbnail .shanti-thumbnail-image img {height: auto;}
-.page-explore li.shanti-thumbnail .title {font-weight: bold;}
-.page-explore li.shanti-thumbnail .links {padding: 6px;}
-.page-explore li.shanti-thumbnail .links li {list-style-type: none;}
-.page-create .shanti-thumbnail .title { font-size: 1.25em;margin:1rem auto;text-align:center;letter-spacing:0.05rem;font-family:'museo-sans-500',arial,sans-serif;}
-
-****/
-
-
-
-
+.shanti-field-agent span::before,
+.shanti-field-type span::before{ font-family:'shanticon'; font-size:130%; font-weight:normal;position:relative;top:0.1rem;margin-right:0.4rem; }
+.shanti-field-agent span::before{ content:'\e600';float:left;/* force agent text as anchor tag to not wrap */ }
+.shanti-field-type span::before{ content: "\e63c";}
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}
 /**** The Popup share block ****/
@@ -176,6 +164,7 @@ table.token-tree{ margin-left: 0px; margin-bottom:15rem;} /*  look in /user/166/
 
 
 
+
 /***** SEARCH  ******/
 
 /**** Facet Blocks ****/
@@ -200,7 +189,7 @@ ul.shivanode-info li div { display: inline-block; }
 /* search flyout styles */
 .extruder .text{ border:1px solid #eee;}
 .extruder-content h2{ margin: 1.5rem 0 1rem 1.75rem; font-size:1.38em;}
-.extruder-content ul{ margin:0.6rem 0 0.6rem 2rem !important; padding-bottom:1.3rem; padding-left: 2px;}
+.extruder-content ul{ margin:0.6rem 0 0.6rem 2.2rem !important; padding-bottom:1.3rem; padding-left: 2px;}
 .extruder-content ul li{ font-size: 1em !important;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;line-height:1.32em;padding: 0.2em 0.5em 0 0;}
 .extruder-content ul li:hover{ color:#111;}
 .extruder-content ul li::before{ background: #fff;color: transparent;font-family: 'shanticon';content: '\e625';font-size: 1.06em;float: left;position: relative; top: 0.5rem;border-radius: 50%;background-clip: padding-box; width: 7px;height: 7px;display: inline-block;margin:0 9px 0 0;-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);border-collapse: separate;} 

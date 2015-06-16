@@ -83,7 +83,7 @@
 	padding:0.6rem 6rem;
 	float:left;
 	text-align:center;
-	margin:0.7rem 0 0;
+	margin:0.9rem 0 0;
 	height:3.3rem;
 	position:relative;
 	left:-1.3rem;
@@ -125,7 +125,7 @@
 .page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:#555;font-weight: bold;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
 
-.page-explore .shanti-thumbnail .body-wrap .title{ margin-bottom:0.5rem;}
+.page-explore .shanti-thumbnail .body-wrap .title{ margin-bottom:0.3rem;}
 .page-create .shanti-thumbnail .body-wrap .title{ margin-top:0;white-space:normal;}
 .page-create .shanti-thumbnail:hover .body-wrap .title{ color: rgb(207, 47, 30);}
 

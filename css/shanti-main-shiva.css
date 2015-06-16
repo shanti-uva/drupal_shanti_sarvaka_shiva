@@ -80,7 +80,7 @@
 .page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:black;font-weight: normal;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 
-.page-explore .shanti-thumbnail .body-wrap .title{ font-weight:bold;}
+.page-explore .shanti-thumbnail .body-wrap .title{ font-weight:bold;white-space:nowrap;}
 
 /* smaller link fonts */
 .shanti-thumbnail .body-wrap{padding-top:0.5rem;}

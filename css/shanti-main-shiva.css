@@ -95,7 +95,7 @@
   opacity:0.1;
   font-size: 1.32em;
 }
-.sn-explore-list ul li.sn-create-link a:hover{ opacity:1; text-decoration:none;}
+.sn-explore-list ul li.sn-create-link a:hover{ opacity:1; color:#fff; text-decoration:none;}
 .sn-explore-list ul li.sn-create-link a:active{ opacity:0.5;}
 
 

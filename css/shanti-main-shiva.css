@@ -90,14 +90,16 @@
 .page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:black;font-weight: normal;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 
+.shanti-field-type{ line-height:1.7rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .shanti-field-agent span::before,
-.shanti-field-type span::before{ font-family:'shanticon'; font-size:130%; font-weight:normal;position:relative;top:0.1rem;margin-right:0.4rem; }
+.shanti-field-type span::before{ font-family:'shanticon';font-size:130%;font-weight:normal;position:relative;top:0.1rem;margin-right:0.5rem; }
 .shanti-field-agent span::before{ content:'\e600';float:left;/* force agent text as anchor tag to not wrap */ }
-.shanti-field-type span::before{ content: "\e63c";}
+.shanti-field-type span::before{ content: "\e63c";position:relative;top:0.3rem;right:.2rem;}
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}
+
 /**** The Popup share block ****/
 .page-node-share .block-system-main{ margin: 0px;padding: 0px;}
 body.page-node-share.lightbox-processed{ margin:0px !important;}

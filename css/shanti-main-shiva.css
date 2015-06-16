@@ -39,6 +39,8 @@
 
 .page-explore .panel-body .sn-explore-list{ padding-left:0;}
 
+
+.page-groups .pane-menu-menu-groups .pane-content{ margin-left:-0.3rem;margin-top:.5rem;}
 /* float pager left */
 .page-groups .pager{ text-align: left;float: left;margin-top:5rem;position: relative;top: 0;right: 0;}
 .page-groups .view.view-og-list.view-id-og_list{ margin-top:1rem !important;}

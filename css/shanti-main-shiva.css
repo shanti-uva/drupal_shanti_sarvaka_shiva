@@ -76,7 +76,7 @@
 	list-style-type: none;
 }
 .sn-explore-list ul.links li{ text-align:center;}
-.sn-explore-list ul li .sn-create-link a{ 
+.sn-explore-list ul li.sn-create-link a{ 
 	display:block;
 	width:115%;
 	background:#5b68ce;

@@ -139,10 +139,12 @@
 .shanti-thumbnail .body-wrap a:hover,
 .shanti-thumbnail .body-wrap a:active{text-decoration:underline;color: rgb(207, 47, 30);}
 .shanti-thumbnail .body-wrap a:active{text-decoration:none;}
+
 .shanti-thumbnail .body-wrap .title,
 .shanti-thumbnail .body-wrap ul.links li a,
 .shanti-thumbnail a.shanti-thumbnail-link{ font-size:1em;line-height:1.38em;font-weight:bold;margin:0;} /* thumbnail title */ 
 
+.shanti-thumbnail a.shanti-thumbnail-link{ line-height:1.18em;}
 .page-explore .shanti-thumbnail .body-wrap ul.links li a{ font-size:1.25em;font-weight:normal;}
 
 .shanti-thumbnail .sn-create-link a span{ margin-right:0.5rem;}

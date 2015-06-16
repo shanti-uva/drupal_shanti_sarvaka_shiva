@@ -81,7 +81,7 @@
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:.5rem auto;color:black;font-weight: bold;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
 
 .page-explore .shanti-thumbnail .body-wrap .title{ }
-.page-create .shanti-thumbnail .body-wrap .title{ }
+.page-create .shanti-thumbnail .body-wrap .title{ margin-top:0;white-space:normal;}
 
 /* smaller link fonts */
 .shanti-thumbnail .body-wrap{padding-top:0.5rem;}
@@ -101,9 +101,9 @@
 .shanti-field-agent span::before,
 .shanti-field-type span::before{ font-family:'shanticon';font-size:130%;font-weight:normal;position:relative;top:0.1rem;margin-right:0.5rem; }
 .shanti-field-agent span::before{ content:'\e600';float:left;/* force agent text as anchor tag to not wrap */ }
-.shanti-field-type span::before{ content: "\e63c";position:relative;top:0.2rem;}
+.shanti-field-type span::before{ content: "\e63c";position:relative;top:0.3rem;font-size:140%;}
 
-.shanti-field-type span{ line-height:1.7rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
+.shanti-field-type span{ font-size:1.12em;line-height:1.5rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;}
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}
 

@@ -177,7 +177,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .sn-helplink img{ position:relative;top:-0.5rem;}
 
 /**** Shivanode View Page ****/
-.vis-infoshare > div {display:inline-block; margin:0;}
+.vis-infoshare > div {display:inline-block; margin:0; width:3rem;}
 .vis-infoshare .popover-link {
   background: transparent;
   border: none;

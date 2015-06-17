@@ -165,12 +165,19 @@
 .page-node-share .block-system-main{ margin: 0px;padding: 0px;}
 .page-node-share.lightbox-processed{ margin:0px !important;}
 #sharetabs .tab-pane{ padding-right: 2rem;}
-#sharetabs .tab-pane h3 { color: #5a9017;font-size: 1.5rem;font-weight: bold;letter-spacing: 0.75px;}
+#sharetabs .tab-pane h3 { color: #5a9017;font-size:1.5rem;font-weight: bold;letter-spacing: 0.75px;}
 #sharetabs .tab-pane p { margin-top: 8px;}
 #sharetabs .tab-pane .stButton span {min-height: 22px !important;}
 
+
+div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 6px;}
+
+.fieldset-legend{ position:relative;
+top:-1.5rem;}
+
+
 /**** Shivanode View Page ****/
-.vis-infoshare > div {display: inline-block;  margin: 0px 12px 0px 0px}
+.vis-infoshare > div {display:inline-block; margin:0;}
 .vis-infoshare .popover-link {
   background: transparent;
   border: none;
@@ -197,7 +204,7 @@
 .visinfo .popover-content{ background-color: #ffffff;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
 .visinfo .popover-content ul.info li{ list-style-type:none; }
-.vis-infoshare{ max-width: 200px;display: inline-block;}
+.vis-infoshare{ max-width: 200px;display: inline-block;position:relative;top:-1.2rem;}
 .vis-infoshare > .field-name-field-subjects, .vis-infoshare > .field-name-field-places { margin: 0px;}
 /* .vis-kmaps{ display: inline-block;}
 .vis-kmaps > div { display: inline-block; vertical-align: text-bottom; } */

@@ -83,7 +83,7 @@
 	padding:0.7rem 2rem;
 	float:left;
 	text-align:center;
-	margin: 1.1rem 0 0 !important;
+	margin: 1rem 0 0 !important;
 	height:3.1rem;
 	font-size: 1.5rem;
 	font-weight:bold;
@@ -96,7 +96,7 @@
 .sn-explore-list ul li.sn-create-link a:hover{ color: #fff; text-decoration:none; opacity:1;}
 .sn-explore-list ul li.sn-create-link a:active{ color: #fff; background: #3c47b7;}
 
-.shanti-thumbnail .sn-create-link a span{ margin-right:0.7rem;}
+.shanti-thumbnail .sn-create-link a span{ margin-left:-0.5rem; margin-right:0.7rem;}
 
 .sn-create-link .shanti-thumbnail-info a{ 
 	display:block;

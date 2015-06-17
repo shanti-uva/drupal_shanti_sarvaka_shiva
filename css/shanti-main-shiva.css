@@ -83,8 +83,8 @@
 	padding:0.7rem 2rem;
 	float:left;
 	text-align:center;
-	margin:0.9rem 0 0;
-	height:3rem;
+	margin: 1.1rem 0 0 !important;
+	height:3.1rem;
 	font-size: 1.5rem;
 	font-weight:bold;
 	color:#fff;

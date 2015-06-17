@@ -78,16 +78,13 @@
 .sn-explore-list ul.links li{ text-align:center;}
 .sn-explore-list ul li.sn-create-link a{ 
 	display:block;
-	width:115%;
+	width:100%;
 	background:#5b68ce;
-	padding:0.7rem 6rem;
+	padding:0.7rem 2rem;
 	float:left;
 	text-align:center;
 	margin:0.9rem 0 0;
-	height:3.3rem;
-	position:relative;
-	left:-1.3rem;
-	top:1.6rem;
+	height:3rem;
 	font-size: 1.5rem;
 	font-weight:bold;
 	color:#fff;

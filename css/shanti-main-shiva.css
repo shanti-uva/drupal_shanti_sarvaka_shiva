@@ -88,7 +88,7 @@
 	font-size: 1.5rem;
 	font-weight:bold;
 	color:#fff;
-	border-radius:0 0 7px 7px;
+	border-radius:3px;
   opacity:0.9;
   font-size: 1.32em;
   overflow:hidden;
@@ -96,6 +96,7 @@
 .sn-explore-list ul li.sn-create-link a:hover{ color: #fff; text-decoration:none; opacity:1;}
 .sn-explore-list ul li.sn-create-link a:active{ color: #fff; background: #3c47b7;}
 
+.shanti-thumbnail .sn-create-link a span{ margin-right:0.7rem;}
 
 .sn-create-link .shanti-thumbnail-info a{ 
 	display:block;
@@ -145,7 +146,7 @@
 .shanti-thumbnail a.shanti-thumbnail-link{ line-height:1.18em;}
 .page-explore .shanti-thumbnail .body-wrap ul.links li a{ font-size:1.25em;font-weight:normal;}
 
-.shanti-thumbnail .sn-create-link a span{ margin-right:0.5rem;}
+
 
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}

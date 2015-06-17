@@ -134,7 +134,6 @@
 
 /* smaller link fonts */
 .shanti-thumbnail .body-wrap{padding-top:0.5rem;}
-.front .shanti-thumbnail .body-wrap{ padding-top:0;}
 .shanti-thumbnail .body-wrap a{ font-size:1.06em;line-height:2em;}
 .shanti-thumbnail .body-wrap a:hover,
 .shanti-thumbnail .body-wrap a:active{text-decoration:underline;color: rgb(207, 47, 30);}

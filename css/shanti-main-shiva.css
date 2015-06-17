@@ -172,9 +172,8 @@
 
 div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 6px;}
 
-.fieldset-legend{ position:relative;
-top:-1.5rem;}
-
+.fieldset-legend{ position:relative;top:-1.5rem;}
+.sn-helplink img{ position:relative;top:-0.5rem;}
 
 /**** Shivanode View Page ****/
 .vis-infoshare > div {display:inline-block; margin:0;}

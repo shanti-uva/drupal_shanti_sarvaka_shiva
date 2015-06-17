@@ -243,6 +243,9 @@ table.token-tree{ margin-left: 0px; margin-bottom:15rem;} /*  look in /user/166/
 .front .content-section.col-xs-12 .tab-content:nth-of-type(1){ max-width:1000px;margin:0 auto;}
 .page-node-add-shivanode .tab-pane.main-col > .region-content{ max-width:100% !important; margin:0 auto !important;}
 
+.page-mydata .views-table{ margin-bottom:2rem;}
+.views-table tr .form-item{ padding:0.6rem 0;}
+
 
 
 /***** SEARCH  ******/

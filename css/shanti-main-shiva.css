@@ -159,8 +159,9 @@
 
 .shanti-field-type span{ font-size:1.18em;line-height:1.32rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
 
-#sharetabs > h2{ width: 100%;text-align: center;margin: 0px 0px 24px;text-decoration: underline;}
-
+#sharetabs > h2{ width: 100%;text-align: center;margin: 10px 0px 20px;text-decoration: none;}
+#sharetabs .nav-tabs li:nth-of-type(1){ margin-left:2rem;}
+#bottomNavClose{ top: 10px;}
 
 /**** The Popup share block ****/
 .page-node-share .block-system-main{ margin: 0px;padding: 0px;}
@@ -222,6 +223,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .vis-kmaps > div { display: inline-block; vertical-align: text-bottom; } */
 
 .visinfo .popover-content .popover-body{ padding:1rem 1.5rem 2rem;}
+.visinfo .popover-content .popover-body .desc{ margin-left:1.5rem;}
 
 /**** Shivanode Edit page ****/
 #data_sheet_in_use .label{ color: #555;letter-spacing: 0.5px;}

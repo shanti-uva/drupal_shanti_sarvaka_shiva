@@ -212,7 +212,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 
 .visinfo .popover-content .shanticon-agents::before{ margin-right:1rem;}
 
-.vis-infoshare{ max-width: 200px;display: inline-block;position:relative;top:-1.2rem;}
+.vis-infoshare{ margin-left:3rem; max-width: 200px;display:inline-block;position:relative;top:-1.2rem;}
 .vis-infoshare > .field-name-field-subjects, .vis-infoshare > .field-name-field-places { margin: 0px;}
 /* .vis-kmaps{ display: inline-block;}
 .vis-kmaps > div { display: inline-block; vertical-align: text-bottom; } */

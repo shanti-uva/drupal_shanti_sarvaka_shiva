@@ -208,6 +208,8 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .visinfo .popover-content{ background-color: #ffffff;padding:0;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
 .visinfo .popover-content ul.info li{ list-style-type:none; padding:5px 10px;}
+.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:120%;position:relative;top:0.3rem;}
+
 .vis-infoshare{ max-width: 200px;display: inline-block;position:relative;top:-1.2rem;}
 .vis-infoshare > .field-name-field-subjects, .vis-infoshare > .field-name-field-places { margin: 0px;}
 /* .vis-kmaps{ display: inline-block;}

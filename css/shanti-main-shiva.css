@@ -223,7 +223,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .vis-kmaps > div { display: inline-block; vertical-align: text-bottom; } */
 
 .visinfo .popover-content .popover-body{ padding:1rem 1.5rem 2rem;}
-.visinfo .popover-content .popover-body .desc{ margin-left:1.5rem;}
+.visinfo .popover-content .popover-body .desc{ margin-left:1.5rem;font-weight:bold;}
 
 /**** Shivanode Edit page ****/
 #data_sheet_in_use .label{ color: #555;letter-spacing: 0.5px;}

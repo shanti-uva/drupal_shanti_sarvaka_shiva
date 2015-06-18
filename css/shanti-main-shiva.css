@@ -203,8 +203,9 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 
 .vis-infoshare .visinfo .popover.related-resources-popover { background-color: #FFFFF !important;min-width: 350px;margin-top: 18px;margin-left: 4px;}
 
-/*.vis-infoshare .visinfo .popover h5.popover-title { color: white; }*/
-.visinfo .popover-content{ background-color: #ffffff;}
+/*.vis-infoshare .visinfo .popover h5.popover-title { color: white; }*/ 
+.visinfo .popover h5.popover-title{ background:#f0f0f0;font-size: 1.38rem;padding: 16px 14px;}
+.visinfo .popover-content{ background-color: #ffffff;padding-top:0;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
 .visinfo .popover-content ul.info li{ list-style-type:none; }
 .vis-infoshare{ max-width: 200px;display: inline-block;position:relative;top:-1.2rem;}

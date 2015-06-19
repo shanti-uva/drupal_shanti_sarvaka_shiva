@@ -262,7 +262,7 @@ table.token-tree{ margin-left: 0px; margin-bottom:15rem;} /*  look in /user/166/
 .views-table tr .form-item{ padding:0.6rem 0;}
 
 
-.node-shivanode .form-item-title input.form-control{ max-width: 17em;}
+.node-shivanode .form-item-title input.form-control{ max-width: 17em !important;}
 
 
 
@@ -348,7 +348,7 @@ ul.shivanode-info li div { display: inline-block; }
 .pane-menu-menu-groups ul.menu li a.active::before{ background: #5b68ce;}
 
 /* Groups page, first column */
-.panels-flexible-region-3-left_bottom_region{ width:31%;}
+.panels-flexible-region-3-left_bottom_region{ max-width:31%;}
 
 
 

@@ -262,8 +262,8 @@ table.token-tree{ margin-left: 0px; margin-bottom:15rem;} /*  look in /user/166/
 .views-table tr .form-item{ padding:0.6rem 0;}
 
 
-.node-type-shivanode .form-item-title input.form-control{ max-width: 17em !important;}
-
+.node-type-shivanode .form-item-title input.form-control{ max-width: 15em !important;}
+.node-type-shivanode .bootstrap-select.form-control:not([class*='span']){ max-width:10em;}
 
 
 /***** SEARCH  ******/

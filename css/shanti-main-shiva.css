@@ -374,6 +374,11 @@ ul.shivanode-info li div { display: inline-block; }
 
 .field-widget-kmap-tree-picker- .kmap-item{ font-size:0.88em;}
 
+
+.page-node-edit .fieldset.form-wrapper legend{ position:relative; top:-1.2rem;}
+
+
+
 /* page at dev tab > token tab
 table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-processed.treeTable{ max-width:1050px !important;margin:0 auto 20rem;}
  */

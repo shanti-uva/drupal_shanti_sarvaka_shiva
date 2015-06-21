@@ -178,7 +178,10 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .page-node-add-shivanode .fieldset-legend{ position:relative;top:-1.5rem;}
 .sn-helplink img{ position:relative;top:-0.5rem;}
 
+
+
 /**** Shivanode View Page ****/
+.visinfo .popover{ z-index:1200;}
 .vis-infoshare > div {display:inline-block; margin:0; width:3rem;}
 .popover .related-resources-popover .desc p{ margin-left:-1rem;}
 .vis-infoshare .popover-link {

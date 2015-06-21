@@ -214,7 +214,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .visinfo .popover-content{ background-color: #ffffff;padding:0;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
 .visinfo .popover-content ul.info li{ list-style-type:none; padding:3px 10px;}
-.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:110%;position:relative;top:0.3rem;}
+.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:110%;}
 
 .visinfo .popover-content ul.info li span.shanticon-agents{ font-size:105%;} 
 

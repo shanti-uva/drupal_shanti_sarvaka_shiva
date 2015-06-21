@@ -210,15 +210,15 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .visinfo .popover h5.popover-title{ background:#f7f7f7;font-size: 1.38rem;padding: 16px 14px 16px 22px;}
 .visinfo .popover-content{ background-color: #ffffff;padding:0;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
-.visinfo .popover-content ul.info li{ list-style-type:none; padding:5px 10px;}
-.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:115%;position:relative;top:0.3rem;}
+.visinfo .popover-content ul.info li{ list-style-type:none; padding:3px 10px;}
+.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:110%;position:relative;top:0.3rem;}
 
 .visinfo .popover-content ul.info li span.shanticon-agents{ font-size:105%;} 
 
 .visinfo .popover-content .shanticon-agents::before{ margin-right:1rem;}
 .visinfo .popover-content .shanticon-visuals::before{ font-size:115%;}
 
-.visinfo .popover.bottom > .arrow::after{ border-bottom-color:#e0e0e0;}
+.visinfo .popover.bottom > .arrow::after{ border-bottom-color:#f7f7f7;}
 
 
 .vis-infoshare{ margin-left:3rem; max-width: 200px;display:inline-block;position:relative;top:-1.2rem;}

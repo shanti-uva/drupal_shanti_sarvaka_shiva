@@ -271,7 +271,7 @@ table.token-tree{ margin-left: 0px; margin-bottom:15rem;} /*  look in /user/166/
 
 .page-node-edit .form-item-title input.form-control{ max-width: 12em !important;}
 .page-node-edit .bootstrap-select.form-control:not([class*='span']){ max-width:10em !important;}
-.page-node-edit fieldset.form-wrapper legend .fieldset-legend{ position:relative;top:-0.6rem;}
+.page-node-edit fieldset.form-wrapper legend .fieldset-legend{ position:relative;top:-1.2rem;}
 .page-node-edit div#upperbuttons{ padding-top:0;}
 
 

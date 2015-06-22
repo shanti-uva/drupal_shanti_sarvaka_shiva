@@ -221,7 +221,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .visinfo .popover-content ul.info li span.shanticon-agents{ font-size:105%;} 
 
 .visinfo .popover-content .shanticon-agents::before{ margin-right:1rem;}
-.visinfo .popover-content .shanticon-visuals::before{ font-size:115%;}
+.visinfo .popover-content .shanticon-visuals::before{ font-size:115%;position:relative;top:0.3rem;}
 
 .visinfo .popover.bottom > .arrow::after{ border-bottom-color:#f7f7f7;}
 

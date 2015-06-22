@@ -233,7 +233,7 @@ function sarvaka_shiva_custom_info_popover($variables) {
 		$vtype = "<li><span class=\"icon shanticon-visuals\" title=\"Visualization Type\"></span> {$variables['vtype']} {$subtype}</li>";
 	}
 	if (!empty($variables['vauthor'])) {
-		$vauthor = "<li><span class=\"icon shanticon-agents\" title=\"Author\">{$variables['vauthor']}</span></li>";
+		$vauthor = "<li><span class=\"icon shanticon-agents\" title=\"Author\"></span> {$variables['vauthor']}</li>";
 	}
 	if (!empty($variables['vdate'])) {
 		$vdate = "<li><span class=\"icon shanticon-calendar\" title=\"Date Created\"></span> {$variables['vdate']}</li>";

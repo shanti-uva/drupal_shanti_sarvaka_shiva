@@ -150,6 +150,8 @@
 .page-explore .shanti-thumbnail .body-wrap ul.links li a{ font-size:1.25em;font-weight:normal;}
 
 
+.shanti-thumbnail-image a .overlay::before{ content: "\e63c";line-height: 2.12em;}
+
 .shanti-field-created{ position:relative;top:-.5rem;}
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
@@ -214,7 +216,7 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .visinfo .popover-content{ background-color: #ffffff;padding:0;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
 .visinfo .popover-content ul.info li{ list-style-type:none; padding:3px 10px;}
-.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:110%;}
+.visinfo .popover-content ul.info li span{ margin-right:0.5rem;font-size:110%;.shanti-thumbnail-image a .overlay::before}
 
 .visinfo .popover-content ul.info li span.shanticon-agents{ font-size:105%;} 
 

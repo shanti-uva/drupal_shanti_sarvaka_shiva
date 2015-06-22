@@ -33,6 +33,7 @@
 	
   <div class="shanti-thumbnail-image shanti-field-visuals">
     <a href="<?php print url('node/' . $fields['nid']->content); ?>" class="shanti-thumbnail-link">
+    	 <span class="overlay"><span class="icon"></span></span>
        <?php print $fields['field_image']->content;  ?>
        <span class="icon shanticon-visuals"></span>
     </a>

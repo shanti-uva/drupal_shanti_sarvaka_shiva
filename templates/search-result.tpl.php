@@ -69,6 +69,7 @@
 	
   <div class="shanti-thumbnail-image shanti-field-visuals">
     <a href="<?php print $url; ?>" class="shanti-thumbnail-link">
+    	 <span class="overlay"><span class="icon"></span></span>
        <img class="img-responsive" typeof="foaf:Image" src="<?php print $result['thumb_url']; ?>">
        <span class="icon shanticon-visuals"></span>
     </a>

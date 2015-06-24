@@ -1,7 +1,7 @@
 /***** Sarvaka Styles :: Custom Colors *******/
 .basebg, /* older class name, deprecated */
-.titlearea, /* colored banner */
-.thumbtype, /* icon */
+.titlearea, /* colored title banner */
+.thumbtype, /* thumbnail icon */
 .carousel-control, /* directional buttons */
 .breadcrumb .icon, /* arrow ofr breadcrumb path */
 .nav-justified>li.active, /* large tabs juststified */
@@ -52,6 +52,7 @@
 
 .menu-main-desk .form-group.last:active{ background:#eee;color:#222;}
 
+.page-node .view-og-nodes .views-field{ height:2.8rem;}
 
 
 /***** Gallery Views ****/
@@ -181,6 +182,10 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .sn-helplink img{ position:relative;top:-0.5rem;}
 
 
+#lightbox2-overlay.overlay_default{ opacity:0.6;} /* for lightbox overlay */
+
+.vis-infoshare .fa-info-circle{ position:relative;top:0.15rem;}
+
 
 /**** Shivanode View Page ****/
 .visinfo .popover{ z-index:1200;}
@@ -212,12 +217,13 @@ div#data_sheet_in_use{ margin:3rem auto 2rem;float:left;width:100%;padding: 3px 
 .vis-infoshare .visinfo .popover.related-resources-popover { background-color: #FFFFF !important;min-width: 300px;margin-top:18px;margin-left:4px;}
 
 /*.vis-infoshare .visinfo .popover h5.popover-title { color: white; }*/ 
-.visinfo .popover h5.popover-title{ background:#f7f7f7;font-size: 1.38rem;padding: 16px 14px 16px 22px;}
+.visinfo .popover h5.popover-title{ background:#f7f7f7;font-size: 1.38rem;padding: 16px 14px 16px 22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .visinfo .popover-content{ background-color: #ffffff;padding:0;}
 .visinfo .popover-content ul.info{margin: 0px;padding: 0px;}
 .visinfo .popover-content ul.info li{ list-style-type:none; padding:3px 10px;}
 
 .visinfo .popover-content ul.info li span.shanticon-agents{ font-size:105%;} 
+.visinfo .popover-content ul.info li span.icon.shanticon-visuals{ font-size:125%;}
 .visinfo .popover-content ul.info li span::before{ font-size:115%;position:relative;top:0.3rem;}
 
 .visinfo .popover.bottom > .arrow::after{ border-bottom-color:#f7f7f7;}

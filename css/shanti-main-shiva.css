@@ -156,12 +156,13 @@
 .shanti-field-created{ position:relative;top:-.5rem;}
 .shanti-field-content,
 .shanti-field-created{color:#222;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+/* thumbnail footer */
 .shanti-field-agent span::before,
-.shanti-field-type span::before{ font-family:'shanticon';font-size:1.32em;font-weight:normal;position:relative;top:0.25rem;margin-right:0.5rem; }
+.shanti-field-type span::before{ font-family:'shanticon';font-size:1.32em;font-weight:normal;position:relative;top:0.35rem;margin-right:0.5rem; }
 .shanti-field-agent span::before{ content:'\e600';float:left;/* force agent text as anchor tag to not wrap */ }
 .shanti-field-type span::before{ content: "\e63c";position:relative;top:0.3rem;font-size:140%;}
 
-.shanti-field-type span{ font-size:1.18em;line-height:1.32rem;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+.shanti-field-type span{ font-size:1.18em;line-height:1em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
 
 #sharetabs > h2{ width: 100%;text-align: center;margin: 10px 0px 20px;text-decoration: none;}
 #sharetabs .nav-tabs li:nth-of-type(1){ margin-left:2rem;}

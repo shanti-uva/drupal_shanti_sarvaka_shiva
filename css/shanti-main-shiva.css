@@ -439,11 +439,11 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 */
 
 
-.page-groups .inside.panels-flexible-row-inside > div{ padding:0;width:100%;float:left;}
+.page-groups .inside.panels-flexible-row-3-main-row > div > div{ padding:0;width:100%;float:left;}
 
 @media screen and (min-width: 768px) {
 	
-	.page-groups .inside.panels-flexible-row-inside > div{ padding:0 15px;width:33.333%;}
+	.page-groups .inside.panels-flexible-row-3-main-row > div > div{ padding:0 15px;width:33.333%;}
 }
 
 

@@ -448,6 +448,8 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 
 .page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:0px;}
 
+.page-groups h2.pane-title{ border-top:2px solid #aaa; padding-top:0.5rem;}
+
 
 @media screen and (min-width: 768px) {
 	

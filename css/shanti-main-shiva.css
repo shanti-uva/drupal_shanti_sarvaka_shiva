@@ -374,8 +374,10 @@ ul.shivanode-info li div { display: inline-block; }
 .pane-menu-menu-groups ul.menu li a.active::before{ background: #5b68ce;}
 
 /* Groups page columns */
-.panels-flexible-3 .panels-flexible-region-inside,
-.panels-flexible-row-3-main-row-left.col-xs-12.col-sm-4{ padding-left:0;}
+.page-groups .panels-flexible-3 .panels-flexible-region{ float: left !important; width:auto !important;}
+
+.page-groups .panels-flexible-3 .panels-flexible-region-inside,
+.page-groups .panels-flexible-row-3-main-row-left.col-xs-12.col-sm-4{ padding-left:0;}
 
 
 
@@ -450,7 +452,6 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 
 .page-groups h2.pane-title{ border-top:2px solid #aaa; padding-top:0.5rem;}
 
-.page-groups .panels-flexible-region-3-left_bottom_region{ width:auto;}
 
 
 
@@ -459,6 +460,8 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 	.page-groups .panels-flexible-row-3-main-row > div > div{ padding:0 15px 0 0;width:33.333%;}
 
 	.page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:15px;}
+
+	.page-groups .panels-flexible-3 .panels-flexible-region{ float: none !important;}
 }
 
 

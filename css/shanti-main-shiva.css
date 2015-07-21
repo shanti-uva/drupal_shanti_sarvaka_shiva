@@ -442,16 +442,13 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 .content-resources .nav-pills li .ajax-progress { font-size:1.5rem;position: absolute;right:0.1em;top:0.62em;}
 */
 
-
+.page-groups table.views-table.cols-2,
 .page-groups .panels-flexible-region.panels-flexible-region-3-groups_description.panels-flexible-region-first{ width:100%;}
 
 .page-groups .panels-flexible-row-3-main-row-middle{ margin:0;}
 .page-groups .panels-flexible-row-3-main-row > div > div{ padding:0;width:100%;float:left;}
 
 .page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:15px;} /* outer col wrapper */
-
-.page-groups table.views-table.cols-2{ width:100%;}
-
 
 
 
@@ -461,9 +458,6 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 @media screen and (min-width: 768px) {
 	
 	.page-groups .panels-flexible-row-3-main-row > div > div{ padding:0 15px 0 0;width:33.333%;}
-
-	.page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:0px;} /* outer col wrapper */
-
 }
 
 

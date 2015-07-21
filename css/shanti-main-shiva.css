@@ -448,9 +448,9 @@ table.token-tree.sticky-enabled.tableheader-processed.sticky-table.token-tree-pr
 .page-groups .panels-flexible-row-3-main-row-middle{ margin:0;}
 .page-groups .panels-flexible-row-3-main-row > div > div{ padding:0;width:100%;float:left;}
 
-.page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:0px;}
+.page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:15px;}
 
-.page-groups h2.pane-title{ border-top:3px solid #d0d0d0; padding-top:1rem;margin-top:2.5rem;}
+.page-groups h2.pane-title{ margin-top:2.5rem;}
 .page-groups h2.pane-title:first-child{ border:none;}
 
 table.views-table.cols-2{ width:100%;}
@@ -465,7 +465,7 @@ table.views-table.cols-2{ width:100%;}
 	
 	.page-groups .panels-flexible-row-3-main-row > div > div{ padding:0 15px 0 0;width:33.333%;}
 
-	.page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:15px;}
+	.page-groups .panels-flexible-row.panels-flexible-row-3-main-row.panels-flexible-row-last.clearfix{ padding-left:0px;}
 
 }
 

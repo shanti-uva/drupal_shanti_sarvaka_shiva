@@ -126,7 +126,10 @@
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
 
 .page-explore .shanti-thumbnail-image{ background:#222;}
-.shanti-thumbnail-image img{ margin:1.25rem auto;}
+.shanti-thumbnail-image img{ margin:1.25rem auto; min-width:130px;}
+
+.front .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
+
 
 .page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:0 auto 0.5rem;color:#333;font-weight: bold;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}

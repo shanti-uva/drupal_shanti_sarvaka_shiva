@@ -66,13 +66,15 @@
 
 /**** Thumbnails ****/
 /* .shanti-thumbnail-field .shanti-field-content a { display: inline; } */
+.shanti-thumbnail-image img{ min-width:170px;height:10rem;margin:1.25rem auto; min-width:130px;}
+.front .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
 .shanti-thumbnail-image .icon{ filter:alpha(opacity=70);opacity:0.7;}
 .shanti-gallery,
 .shanti-gallery2,
 .sn-explore-list{width:100%;margin:2rem 0 0;padding:0;position:relative;list-style-type:none;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-start:0;}
 .shanti-gallery a,
 .shanti-gallery2 a,
-.sn-explore-list a{color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
+.sn-explore-list a{ height:auto;color:#222;border:none!important;display:block;font-family: helvetica, arial, sans-serif;}
 
 .sn-explore-list ul.links{ 
 	padding:0;
@@ -93,15 +95,14 @@
 	font-weight:bold;
 	color:#fff;
 	border-radius:3px;
-  opacity:0.9;
-  font-size: 1.32em;
-  overflow:hidden;
+    opacity:0.9;
+    font-size: 1.32em;
+    overflow:hidden;
 }
 .sn-explore-list ul li.sn-create-link a:hover{ color: #fff; text-decoration:none; opacity:1;}
 .sn-explore-list ul li.sn-create-link a:active{ color: #fff; background: #3c47b7;}
 
 .shanti-thumbnail .sn-create-link a span{ margin-left:-0.5rem; margin-right:0.7rem;}
-
 .sn-create-link .shanti-thumbnail-info a{ 
 	display:block;
 	width:115%;
@@ -119,22 +120,13 @@
 	color:#fff;
 }
 
-
 .page-create .shanti-thumbnail{ height: 14em;}
-
 .shanti-gallery2 .shanti-thumbnail,
 .page-create .shanti-thumbnail,
 .page-explore .shanti-thumbnail{ margin: 0.75rem 1.5%;}
-
 .page-explore .shanti-thumbnail-image{ background:#222;}
-.shanti-thumbnail-image img{ margin:1.25rem auto; min-width:130px;}
-
-.front .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
-
-
 .page-create .shanti-thumbnail .body-wrap .title,
 .page-explore .shanti-thumbnail .body-wrap .title{ text-align:center;margin:0 auto 0.5rem;color:#333;font-weight: bold;font-size: 1.44em;font-family:'museo-sans-500',helvetica,arial,sans-serif;white-space:nowrap;overflow: hidden;text-overflow:ellipsis;}
-
 .page-explore .shanti-thumbnail .body-wrap .title{ margin-bottom:0.3rem;}
 .page-create .shanti-thumbnail .body-wrap .title{ margin-top:0;white-space:normal;}
 .page-create .shanti-thumbnail:hover .body-wrap .title{ color: rgb(207, 47, 30);}

@@ -66,7 +66,8 @@
 
 /**** Thumbnails ****/
 /* .shanti-thumbnail-field .shanti-field-content a { display: inline; } */
-.shanti-thumbnail-image img{ min-width:170px;height:10rem;margin:1.25rem auto; min-width:130px;}
+.shanti-thumbnail{ }
+.shanti-thumbnail-image img{ height:10rem;margin:1.25rem auto; /* min-width:170px; min-width:130px;*/}
 .front .shanti-thumbnail-image a:active .overlay::before{ font-size:3.5em !important;}
 .shanti-thumbnail-image .icon{ filter:alpha(opacity=70);opacity:0.7;}
 .shanti-gallery,

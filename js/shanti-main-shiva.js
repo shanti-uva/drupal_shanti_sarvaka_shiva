@@ -11,7 +11,7 @@
     			 * 		.shanti-gallery2 => My Visualizations tab on home page
     			 * 		
     			 */
-					$('.shanti-gallery2', context).imagesLoaded(function() {
+			$('.shanti-gallery2', context).imagesLoaded(function() {
 		          // Prepare layout options.
 		          var options = {
 		          	align: 'left',
@@ -41,7 +41,7 @@
 		
 		          // Call the layout function.
 		          handler.wookmark(options);
-		      });
+		     });
 		      
 		      /**
 		       * .sn-explore-list => the different accordion tabs on create/shivanode/all Create Page
@@ -78,8 +78,8 @@
 		          // Call the layout function.
 		          handler.wookmark(options);
 		      }); **/
-			}
-		}
+		  }
+	  }
 	};
 	
   Drupal.behaviors.thumbInsertingCreateIcon = {

@@ -342,7 +342,7 @@ ul.shivanode-info li div { display: inline-block; }
 
 .input-section .input-group .btn.btn-default span:last-child{ display:none;}
 
-.contextual-links-wrapper{ top:0;}
+#search-flyout.extruder .contextual-links-wrapper{ top: -0.55rem !important;}
 #search-flyout.extruder .text{ border:1px solid #e5e5e5;}
 /* END search flyout */
 

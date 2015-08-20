@@ -123,7 +123,7 @@
 .shanti-thumbnail-image img {
   height: 10rem;
   margin: 1.25rem auto;
- /* min-width:170px; min-width:130px;*/;
+ /* min-width:170px; min-width:130px;*/
 }
 
 .front .shanti-thumbnail-image a:active .overlay::before {
@@ -347,7 +347,7 @@
 .shanti-field-agent span::before {
   content: '\e600';
   float: left;
-/* force agent text as anchor tag to not wrap */;
+/* force agent text as anchor tag to not wrap */
 }
 
 .shanti-field-type span::before {

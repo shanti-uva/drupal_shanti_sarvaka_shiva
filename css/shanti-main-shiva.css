@@ -347,6 +347,8 @@
 .shanti-field-agent span::before {
   content: '\e600';
   float: left;
+  position: relative;
+  top: 0.35rem;
 /* force agent text as anchor tag to not wrap */
 }
 

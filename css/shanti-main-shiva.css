@@ -623,7 +623,7 @@ table.token-tree {
 /***** SEARCH  ******/
 
 .input-section .input-group input.form-control{
-  margin-top:5px;
+  margin-top:9px;
 }
 
 /**** Facet Blocks ****/
@@ -815,9 +815,13 @@ ul.shivanode-info li div {
   padding-left: 0.8rem;
 }
 
+.advanced-view .form-group:first-of-type{
+  border-top:none;
+}
+
 .input-section .input-group .input-group-btn{
   position: absolute;
-  top: 6px;
+  top: 10px;
 }
 
 .input-section .input-group input {

@@ -53,11 +53,6 @@
 }
 /**** End of Custom Colors ****/
 
-.front .field-type-text-with-summary p {
-  margin-top: 0;
-  padding: 0 1rem;
-}
-
 .page-explore .main-col h1:nth-of-type(1), 
 .page-explore .main-col h2:nth-of-type(1), 
 .page-explore .main-col h3:nth-of-type(1) {
@@ -93,8 +88,6 @@
 .content .field-accordion:nth-of-type(1) {
   margin-top: 1rem;
 }
-/* .content-section .tab-content:nth-of-type(1){ padding-top:0.5rem;}  perhaps move this to sarvaka */
-
 
 .menu-main-desk .form-group.last:active {
   background: #eee;
@@ -105,25 +98,10 @@
   height: 2.8rem;
 }
 
-
-/***** Gallery Views ****/
-/* #myvis.tab-pane,
-#allvis.tab-pane{ padding-bottom:10rem;}
-*/
-.front .main-content #block-system-main {
-  margin-bottom: 2rem;
-}
-
-
 /**** Thumbnails ****/
-/* .shanti-thumbnail-field .shanti-field-content a { display: inline; } */
-.shanti-thumbnail {
-}
-
 .shanti-thumbnail-image img {
   height: 10rem;
   margin: 1.25rem auto;
- /* min-width:170px; min-width:130px;*/
 }
 
 .front .shanti-thumbnail-image a:active .overlay::before {

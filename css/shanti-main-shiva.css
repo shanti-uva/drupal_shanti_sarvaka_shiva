@@ -622,6 +622,10 @@ table.token-tree {
 
 /***** SEARCH  ******/
 
+.input-section .input-group input.form-control{
+  margin-top:5px;
+}
+
 /**** Facet Blocks ****/
 div.block-facetapi:after {
   border-top: thin solid #a0a0a0;

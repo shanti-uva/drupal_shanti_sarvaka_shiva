@@ -582,6 +582,12 @@ table.token-tree {
 }
 
 /*.front .content-section.col-xs-12 .tab-content:nth-of-type(1){ max-width:1000px;margin:0 auto;}*/
+
+/* add chart or other special visual creation */
+.page-node-add-shivanode #iframe_container{
+  padding:1rem;
+}
+/* add chart or other special visual creation */
 .page-node-add-shivanode .tab-pane.main-col > .region-content {
   max-width: 100% !important;
   margin: 0 auto !important;

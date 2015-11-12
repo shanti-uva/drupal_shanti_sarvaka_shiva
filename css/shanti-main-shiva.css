@@ -585,6 +585,8 @@ table.token-tree {
 .page-node-add-shivanode .tab-pane.main-col > .region-content {
   max-width: 100% !important;
   margin: 0 auto !important;
+  padding-right:2rem;
+  padding-left:2rem;
 }
 
 .page-mydata .views-table {

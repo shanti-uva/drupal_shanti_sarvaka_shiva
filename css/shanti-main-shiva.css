@@ -622,7 +622,7 @@ table.token-tree {
 
 .inside.panels-flexible-row-inside > div {
   padding: 0 15px;
-  width: 33.333%;
+/*  width: 33.333%;  // Makes visualization table on user page too thin */
   float: left;
 }
 

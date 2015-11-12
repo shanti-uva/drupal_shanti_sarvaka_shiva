@@ -597,6 +597,7 @@ table.token-tree {
 
 .page-mydata .views-table {
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .views-table tr .form-item {

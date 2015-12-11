@@ -63,6 +63,10 @@
   padding-left: 0;
 }
 
+.page-explore .shanticon-visuals{
+  display:none;
+}
+
 .page-groups .pane-menu-menu-groups .pane-content {
   margin-left: -0.3rem;
   margin-top: .5rem;

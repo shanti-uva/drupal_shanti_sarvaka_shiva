@@ -87,28 +87,39 @@
 		hide($content['links']);
 	?>
   <div class="content"<?php print $content_attributes; ?>>
-  	<div class="vis-infoshare">
-  		<?php print $infopop . $sharepop; ?>
-  	</div>
+      <?php if ($view_mode == "teaser"): ?>
+          <h2><a href="<?php print url('node/' . $node->nid); ?>"><?php print $node->title; ?></h2>
+      <?php else: ?>
+      	 <div class="vis-infoshare">
+      		<?php print $infopop . $sharepop; ?>
+      	 </div>
+     <?php endif; ?>
 		<div class="visualization">
 			<?php print render($content['shivanode_json']); ?>
 		</div>
-  	<div class="vis-kmaps">
-  		<div class="vis-subjects">
-  		<?php 
-		  	if (isset($content['field_subjects_kmap'])) {
-					print render($content['field_subjects_kmap']);
-				}
-			?>
-			</div>
-			<div class="vis-places">
-				<?php
-					if (isset($content['field_places_kmap'])) {
-						print render($content['field_places_kmap']);
-					}
-		 	 ?>
-		 	</div>
-  	</div>
+  	
+  	<?php if ($view_mode == "teaser"): ?>
+  	     <ul class="links inline">
+  	         <li class="node-readmore first last"><a href="<?php print url('node/' . $node->nid); ?>" rel="tag" title="<?php print $node->title; ?>">Read more</a></li>
+         </ul>
+       <?php else: ?>
+           <div class="vis-kmaps">
+                <div class="vis-subjects">
+                <?php 
+                    if (isset($content['field_subjects_kmap'])) {
+                            print render($content['field_subjects_kmap']);
+                        }
+                    ?>
+                    </div>
+                    <div class="vis-places">
+                        <?php
+                            if (isset($content['field_places_kmap'])) {
+                                print render($content['field_places_kmap']);
+                            }
+                     ?>
+                    </div>
+            </div>
+      <?php endif; ?>
 	</div>
   
   <?php 

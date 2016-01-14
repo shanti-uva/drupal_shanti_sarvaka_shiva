@@ -112,7 +112,15 @@
 					          	<?php if(!empty($page['allvis'])) { print $page['allvis']['#markup']; } ?>
 					          </div>
 					          <div class="tab-pane" id="myvis">
-					          	<?php if(!empty($page['myvis']))  { print $page['myvis']['#markup']; } ?>
+					          	<?php 
+					          	    if (!$logged_in) {
+					          	        print '<div class="msg"><p>' . 
+					          	                t('Use the log in link from the Main Menu in the upper right corner to view your visualizations.') .
+					          	                '</p></div>';
+					          	    } elseif (!empty($page['myvis']))  {
+					          	         print $page['myvis']['#markup']; 
+                                    } 
+                                   ?>
 					          </div>
 					        </div>
 					      </div>

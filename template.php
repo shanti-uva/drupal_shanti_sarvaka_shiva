@@ -79,7 +79,8 @@ function sarvaka_shiva_preprocess_node(&$vars) {
 											'vdesc' => t('<p>Create a visualization with this data</p>'),
 											'vfooter' => '',
 											));
-		$vars['source_url'] = (empty($vars['shivadata_source_url'])) ? '' : $vars['shivadata_source_url'][0]['value'];
+		//$vars['source_url'] = (empty($vars['shivadata_source_url'])) ? '' : $vars['shivadata_source_url'][0]['value'];
+        $vars['source_url'] = (empty($vars['shivadata_source_url']) || !isset($vars['shivadata_source_url'][0]['value'])) ? '' : $vars['shivadata_source_url'][0]['value'];
 		$vars['create_url'] = url("create/shivanode/{$vars['nid']}");
 		//$vars['link_external'] = "<div class=\"share-link\"><a href=\"$source_url\" target=\"_blank\">$ext_link_pop</a></div>";
 											

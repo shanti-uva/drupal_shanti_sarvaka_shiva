@@ -64,7 +64,7 @@
 }
 
 .page-explore .shanticon-visuals{
-  display:none;
+  /*display:none;*/
 }
 
 .page-groups .pane-menu-menu-groups .pane-content {
@@ -187,6 +187,10 @@
 .shanti-thumbnail .sn-create-link a span {
   margin-left: -0.5rem;
   margin-right: 0.7rem;
+}
+
+.not-logged-in .sn-create-link {
+    display: none;
 }
 
 .sn-create-link .shanti-thumbnail-info a {

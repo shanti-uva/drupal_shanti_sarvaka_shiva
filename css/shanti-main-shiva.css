@@ -53,6 +53,11 @@
 }
 /**** End of Custom Colors ****/
 
+.front .tab-pane.main-col > div
+.front .tab-pane.main-col > div.sn-tab-blocks{
+  padding:0;
+}
+
 .page-explore .main-col h1:nth-of-type(1), 
 .page-explore .main-col h2:nth-of-type(1), 
 .page-explore .main-col h3:nth-of-type(1) {

@@ -5,9 +5,9 @@
 .carousel-control, /* directional buttons */
 .breadcrumb .icon, /* arrow ofr breadcrumb path */
 .nav-justified>li.active, /* large tabs juststified */
-.nav-justified>li.active a,
+/*.nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:active,
+.nav-justified>li.active a:active,*/
 .shanti-thumbnail-image .icon {
   background-color: #5a9017 !important;
 }

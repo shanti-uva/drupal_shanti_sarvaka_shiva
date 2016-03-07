@@ -18,14 +18,7 @@
 }
 
 .basecolor, /* older class name, deprecated */
-.navbar-brand:hover .site-slogan {
-  color: #5a9017 !important;
-}
-
-.navbar-brand:active .site-slogan {
-  color: #444 !important;
-}
- /* darker shades to define details */
+.navbar-brand:hover .site-slogan,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
 .view-section .nav-tabs>li.active>a, 
@@ -37,7 +30,11 @@
 .view-section .fancytree-node.fancytree-active > .glyphicon,
 .view-section .fancytree-node.fancytree-selected > .glyphicon,
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google {
-  color: rgb(72,107,1) !important;
+  color: #5a9017 !important;
+}
+
+.navbar-brand:active .site-slogan {
+  color: #444 !important;
 }
 
 .nav-justified>li.active,

@@ -9,7 +9,7 @@
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active,
 .shanti-thumbnail-image .icon {
-  background-color: #5a9017;
+  background-color: #5a9017 !important;
 }
 
 .nav-justified>li.active::after {

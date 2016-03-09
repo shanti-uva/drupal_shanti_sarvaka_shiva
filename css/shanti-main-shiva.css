@@ -312,7 +312,7 @@
 
 .shanti-thumbnail-image a .overlay::before {
   content: "\e63c";
-  line-height: 2.12em;
+  /*line-height: 2.12em;*/
 }
 
 .shanti-field-created {

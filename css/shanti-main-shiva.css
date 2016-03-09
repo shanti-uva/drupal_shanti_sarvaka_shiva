@@ -108,6 +108,11 @@
   height: 2.8rem;
 }
 
+.node-type-page.visuals .shanti-thumbnail-image a .overlay::before{
+  position: relative;
+  top: 5.5rem;
+}
+
 /**** Thumbnails 
 .shanti-thumbnail-image img {
   height: 10rem;

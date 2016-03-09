@@ -104,9 +104,6 @@
   	         <li class="node-readmore first last"><a href="<?php print url('node/' . $node->nid); ?>" rel="tag" title="<?php print $node->title; ?>">Read more</a></li>
          </ul>
        <?php else: ?>
-           <?php dpm($content, 'content'); 
-           
-           ?>
            <!--
            <div class="vis-kmaps">
                 <div class="vis-subjects">

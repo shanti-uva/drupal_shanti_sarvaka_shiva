@@ -4,7 +4,7 @@
 .thumbtype, /* thumbnail icon */
 .carousel-control, /* directional buttons */
 .breadcrumb .icon, /* arrow ofr breadcrumb path */
-.nav-justified>li.active, /* large tabs juststified */
+/*.nav-justified>li.active,*/ /* large tabs juststified */
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active,
@@ -12,20 +12,8 @@
   background-color: #5a9017 !important;
 }
 
-.nav-justified>li.active::after {
-  border-color: #5a9017;
-  border-top-color: #5a9017;
-}
-
 .basecolor, /* older class name, deprecated */
-.navbar-brand:hover .site-slogan {
-  color: #5a9017 !important;
-}
-
-.navbar-brand:active .site-slogan {
-  color: #444 !important;
-}
- /* darker shades to define details */
+.navbar-brand:hover .site-slogan,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
 .view-section .nav-tabs>li.active>a, 
@@ -37,13 +25,23 @@
 .view-section .fancytree-node.fancytree-active > .glyphicon,
 .view-section .fancytree-node.fancytree-selected > .glyphicon,
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google {
-  color: rgb(72,107,1) !important;
+  color: #5a9017 !important;
 }
 
+.navbar-brand:active .site-slogan {
+  color: #444 !important;
+}
+
+.nav-justified>li.active,
 .view-section .nav-tabs>li.active>a, 
 .view-section .nav-tabs>li.active>a:hover, 
 .view-section .nav-tabs>li.active>a:active {
-  border-top-color: rgb(72,107,1) !important;
+  border-top-color: #5a9017;
+}
+
+.nav-justified>li.active::after {
+  border-color: #5a9017;
+  border-top-color: #5a9017;
 }
 
 @media screen and (min-width: 768px) {

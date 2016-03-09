@@ -108,12 +108,7 @@
   height: 2.8rem;
 }
 
-.node-type-page.visuals .shanti-thumbnail-image a .overlay::before{
-  position: relative;
-  top: 5.5rem;
-}
-
-/**** Thumbnails 
+/**** Thumbnails ****/
 .shanti-thumbnail-image img {
   height: 10rem;
   margin: 1.25rem auto;
@@ -127,7 +122,6 @@
   filter: alpha(opacity=70);
   opacity: 0.7;
 }
-****/
 
 .shanti-gallery,
 .shanti-gallery2,

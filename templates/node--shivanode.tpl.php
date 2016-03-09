@@ -85,6 +85,7 @@
 		// We hide the comments and links now so that we can render them later.
 		hide($content['comments']);
 		hide($content['links']);
+        hide($content['sharediv']);
 	?>
   <div class="content"<?php print $content_attributes; ?>>
       <?php if ($view_mode == "teaser"): ?>
@@ -103,6 +104,10 @@
   	         <li class="node-readmore first last"><a href="<?php print url('node/' . $node->nid); ?>" rel="tag" title="<?php print $node->title; ?>">Read more</a></li>
          </ul>
        <?php else: ?>
+           <?php dpm($content, 'content'); 
+           
+           ?>
+           <!--
            <div class="vis-kmaps">
                 <div class="vis-subjects">
                 <?php 
@@ -118,7 +123,11 @@
                             }
                      ?>
                     </div>
-            </div>
+            </div>-->
+           <?php 
+                print render($content); 
+            ?>
+            
       <?php endif; ?>
 	</div>
   

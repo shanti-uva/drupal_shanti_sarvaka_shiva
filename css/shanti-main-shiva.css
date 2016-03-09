@@ -545,8 +545,11 @@ div#data_sheet_in_use {
 }
 
 .visinfo .popover-content .popover-body .desc {
-  margin-left: 1.5rem;
-  font-weight: bold;
+  margin: 1rem 1.5rem 0rem;
+}
+
+.visinfo .popover-content .popover-body .desc p {
+    font-size: 1em;
 }
 
 /**** Shivanode Edit page ****/

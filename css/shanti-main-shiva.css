@@ -108,7 +108,7 @@
   height: 2.8rem;
 }
 
-/**** Thumbnails ****/
+/**** Thumbnails 
 .shanti-thumbnail-image img {
   height: 10rem;
   margin: 1.25rem auto;
@@ -122,6 +122,7 @@
   filter: alpha(opacity=70);
   opacity: 0.7;
 }
+****/
 
 .shanti-gallery,
 .shanti-gallery2,
@@ -353,7 +354,7 @@
 
 .shanti-field-type span {
   font-size: 1.18em;
-  line-height: 1em;
+  line-height: 1.12em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   white-space: nowrap;
   overflow: hidden;

@@ -113,19 +113,14 @@
   height: 10rem;
   margin: 1.25rem auto;
 }
-/*
+
 .front .shanti-thumbnail-image a:active .overlay::before {
   font-size: 3.5em !important;
 }
-*/
+
 .shanti-thumbnail-image .icon {
   filter: alpha(opacity=70);
   opacity: 0.7;
-}
-
-.shanti-thumbnail-image a .overlay::before{
-  position: relative;
-  top: 5.5rem;
 }
 
 .shanti-gallery,

@@ -312,7 +312,7 @@
 
 .shanti-thumbnail-image a .overlay::before {
   content: "\e63c";
-  line-height: 2.12em;
+  /*line-height: 2.12em;*/
 }
 
 .shanti-field-created {
@@ -353,7 +353,7 @@
 
 .shanti-field-type span {
   font-size: 1.18em;
-  line-height: 1em;
+  line-height: 1.12em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   white-space: nowrap;
   overflow: hidden;

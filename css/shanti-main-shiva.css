@@ -117,13 +117,18 @@
 
 
 .shanti-thumbnail-image .icon {
-filter: alpha(opacity=65);
-opacity: 0.65;
+filter: alpha(opacity=80);
+opacity: 0.8;
 
 width: 1.83em;
 height: 1.68em;
 font-size: 1.38em;
 line-height: 1.68em;
+}
+
+.page-explore .shanti-thumbnail-image .icon {
+  filter: alpha(opacity=65);
+  opacity: 0.65;
 }
 
 .shanti-gallery,

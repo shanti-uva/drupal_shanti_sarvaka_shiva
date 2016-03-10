@@ -114,9 +114,7 @@
   margin: 1.25rem auto;
 }
 
-.front .shanti-thumbnail-image a:active .overlay::before {
-  font-size: 3.5em !important;
-}
+
 
 .shanti-thumbnail-image .icon {
 filter: alpha(opacity=80);
@@ -319,7 +317,11 @@ line-height: 1.68em;
 .shanti-thumbnail-image a .overlay::before {
   content: "\e63c";
   position: relative;
-  top: 1.25rem;
+  top: 5.5rem;
+}
+
+.front .shanti-thumbnail-image a:active .overlay::before {
+  font-size: 3.5em !important;
 }
 
 .shanti-field-created {

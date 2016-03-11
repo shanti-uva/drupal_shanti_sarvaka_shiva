@@ -112,13 +112,16 @@ function sarvaka_shiva_preprocess_shivanode(&$vars) {
         } else {
             $linktxt = t('n/a');
         }
-        // Add link to source spreadsheet after group content access in group details
-        $vars['content']['group_details']['group_content_access']['#suffix'] = '<div class="field field-name-shivanode-data-link field-type-link field-label-inline clearfix">
+
+        // Add link to source spreadsheet after group content access in details field group of full display
+        if (isset($vars['content']['group_details']['group_content_access'])) {
+            $vars['content']['group_details']['group_content_access']['#suffix'] = '<div class="field field-name-shivanode-data-link field-type-link field-label-inline clearfix">
                         <div class="field-label">' . t('Source Data:') . '&nbsp;</div>
                         <div class="field-items">
                             <div class="field-item even">' . $linktxt . '</div>
                         </div>
                     </div>';
+        }
     }
     $vtype = (empty($vars['content']['shivanode_element_type'][0]['#markup'])) ? "" : $vars['content']['shivanode_element_type'][0]['#markup'];
     $vsubtype = (empty($vars['content']['shivanode_subtype'][0]['#markup'])) ? "" : $vars['content']['shivanode_subtype'][0]['#markup'];

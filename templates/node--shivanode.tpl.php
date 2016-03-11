@@ -104,7 +104,10 @@
   	         <li class="node-readmore first last"><a href="<?php print url('node/' . $node->nid); ?>" rel="tag" title="<?php print $node->title; ?>">Read more</a></li>
          </ul>
        <?php else: 
-                // Add the link to the source data as last field
+                // Hide the thumbnail image if it's just the generic one
+                if (preg_match('/sngen/', $field_image['und'][0]['filename'])) {
+                    hide($content['group_details']['field_image']);
+                }
                 print render($content);   
         endif; ?>
 	</div>

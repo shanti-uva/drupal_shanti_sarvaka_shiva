@@ -570,8 +570,17 @@ div#data_sheet_in_use {
     font-size: 1em;
 }
 
+/* Node Details group **/
 .page-node.node-type-shivanode .node-shivanode .group-details {
     margin-bottom: 1rem;
+}
+
+.page-node.node-type-shivanode .field.field-name-field-image {
+    margin: 8px 8px 0 0;
+}
+
+.page-node.node-type-shivanode .field.field-name-shivanode-description {
+    margin: 8px 0 0 0;
 }
 
 /**** Shivanode Edit page ****/

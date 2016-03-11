@@ -103,15 +103,22 @@ function sarvaka_shiva_preprocess_shivanode(&$vars) {
     $linktxt = '';
     if (!empty($vars['data_node'])) {
         if (is_string($vars['data_node']) && strpos($vars['data_node'], 'http') > -1) {
-            $ltitle = t('External Source');
+            $ltitle = t('External Spreadsheet');
             $lurl = $vars['data_node'];
             $linktxt = l($ltitle, $lurl, array('attributes' => array('target' => '_blank')));
         } else if (is_object($vars['data_node']) && isset($vars['data_node'] -> nid)) {
-            $linktxt = l($vars['data_node'] -> title, "node/{$vars['data_node']->nid}");
+            $linktxt = l($vars['data_node'] -> title, "node/{$vars['data_node']->nid}", array('attributes' => array('target' => '_blank')));
+            $vars['data_link'] = $linktxt;
         } else {
             $linktxt = t('n/a');
         }
-        //$linktxt = "Data: " . $linktxt;
+        // Add link to source spreadsheet after group content access in group details
+        $vars['content']['group_details']['group_content_access']['#suffix'] = '<div class="field field-name-shivanode-data-link field-type-link field-label-inline clearfix">
+                        <div class="field-label">' . t('Source Data:') . '&nbsp;</div>
+                        <div class="field-items">
+                            <div class="field-item even">' . $linktxt . '</div>
+                        </div>
+                    </div>';
     }
     $vtype = (empty($vars['content']['shivanode_element_type'][0]['#markup'])) ? "" : $vars['content']['shivanode_element_type'][0]['#markup'];
     $vsubtype = (empty($vars['content']['shivanode_subtype'][0]['#markup'])) ? "" : $vars['content']['shivanode_subtype'][0]['#markup'];

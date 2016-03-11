@@ -103,34 +103,11 @@
   	     <ul class="links inline">
   	         <li class="node-readmore first last"><a href="<?php print url('node/' . $node->nid); ?>" rel="tag" title="<?php print $node->title; ?>">Read more</a></li>
          </ul>
-       <?php else: ?>
-           <!--
-           <div class="vis-kmaps">
-                <div class="vis-subjects">
-                <?php 
-                    if (isset($content['field_subjects_kmap'])) {
-                            print render($content['field_subjects_kmap']);
-                        }
-                    ?>
-                    </div>
-                    <div class="vis-places">
-                        <?php
-                            if (isset($content['field_places_kmap'])) {
-                                print render($content['field_places_kmap']);
-                            }
-                     ?>
-                    </div>
-            </div>-->
-           <?php 
-                print render($content); 
-            ?>
-            
-      <?php endif; ?>
+       <?php else: 
+                // Add the link to the source data as last field
+                print render($content);   
+        endif; ?>
 	</div>
   
-  <?php 
-  //print render($content['links']);
-  //print render($content['comments']); 
-  ?>
 
 </div>

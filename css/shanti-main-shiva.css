@@ -294,12 +294,13 @@
   line-height: 2.5rem;
 }
 
-.shanti-thumbnail .body-wrap a:hover,
-.shanti-thumbnail .body-wrap a:active {
+.shanti-thumbnail .body-wrap a:hover{
   text-decoration: underline;
-  color: rgb(207, 47, 30);
+  /*color: rgb(207, 47, 30);*/
 }
-.shanti-thumbnail .body-wrap a:first-of-type:hover,
+.shanti-thumbnail .body-wrap a:hover:first-of-type{
+  text-decoration: none;
+}
 .shanti-thumbnail .body-wrap a:active {
   text-decoration: none;
 }

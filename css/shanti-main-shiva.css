@@ -120,16 +120,14 @@
   margin: 1.25rem auto;
 }
 
-
-
 .shanti-thumbnail-image .icon {
-filter: alpha(opacity=80);
-opacity: 0.8;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
 
-width: 1.83em;
-height: 1.68em;
-font-size: 1.38em;
-line-height: 1.68em;
+  width: 1.83em;
+  height: 1.68em;
+  font-size: 1.38em;
+  line-height: 1.68em;
 }
 
 .page-explore .shanti-thumbnail-image .icon {
@@ -295,7 +293,7 @@ line-height: 1.68em;
 .shanti-thumbnail .body-wrap .shanti-field-agent a {
   line-height: 2.5rem;
 }
-
+/*
 .shanti-thumbnail .body-wrap a:hover,
 .shanti-thumbnail .body-wrap a:active {
   text-decoration: underline;
@@ -305,7 +303,7 @@ line-height: 1.68em;
 .shanti-thumbnail .body-wrap a:active {
   text-decoration: none;
 }
-
+*/
 .shanti-thumbnail .body-wrap .title,
 .shanti-thumbnail .body-wrap ul.links li a,
 .shanti-thumbnail a.shanti-thumbnail-link {
@@ -373,7 +371,7 @@ line-height: 1.68em;
 
 .shanti-field-type span {
   font-size: 1.18em;
-  line-height: 1.12em;
+  line-height: 1em;
   font-family: 'museo-sans-500',helvetica,arial,sans-serif;
   white-space: nowrap;
   overflow: hidden;

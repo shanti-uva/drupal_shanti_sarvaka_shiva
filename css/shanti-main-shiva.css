@@ -108,6 +108,12 @@
   height: 2.8rem;
 }
 
+
+.page-explore .panel-default .panel-heading+.panel-collapse .panel-body{
+  box-shadow: inset 0 0 5px #c0c0c0;
+}
+
+
 /**** Thumbnails ****/
 .shanti-thumbnail-image img {
   height: 10rem;
@@ -124,6 +130,11 @@ width: 1.83em;
 height: 1.68em;
 font-size: 1.38em;
 line-height: 1.68em;
+}
+
+.page-explore .shanti-thumbnail-image .icon {
+  filter: alpha(opacity=65);
+  opacity: 0.65;
 }
 
 .shanti-gallery,

@@ -109,7 +109,9 @@
         <div class="footer-wrap">
             <div class="shanti-thumbnail-field clearfix shanti-field-type">
                 <span class="shanti-field-content"><?php  //print $fields['shivanode_subtype']->content; 
-                    print shivanode_get_subtype_name($shivanode_subtype['und'][0]['value']);
+                     if (!empty($shivanode_subtype['und'][0]['value'])) {
+                        print shivanode_get_subtype_name($shivanode_subtype['und'][0]['value']);
+                     }
                     ?></span>
             </div>
         </div> <!-- end footer -->

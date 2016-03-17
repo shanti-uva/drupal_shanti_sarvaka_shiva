@@ -111,6 +111,8 @@
                 <span class="shanti-field-content"><?php  //print $fields['shivanode_subtype']->content; 
                      if (!empty($shivanode_subtype['und'][0]['value'])) {
                         print shivanode_get_subtype_name($shivanode_subtype['und'][0]['value']);
+                     } else {
+                         print shivanode_get_type_name($shivanode_element_type['und'][0]['value']);
                      }
                     ?></span>
             </div>

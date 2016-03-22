@@ -44,6 +44,13 @@
   border-top-color: #5a9017;
 }
 
+::-moz-selection{
+  background: #90175a !important;
+} 
+::selection {
+  background: #90175a !important;
+}
+
 @media screen and (min-width: 768px) {
   .nav-justified>li.active::before {
     color: #5a9017 !important;

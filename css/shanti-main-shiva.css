@@ -289,7 +289,7 @@
 .page-mygallery .shanti-thumbnail .body-wrap,
 .node-type-collection .shanti-thumbnail .body-wrap,
 .node-type-subcollection .shanti-thumbnail .body-wrap  {
-  height: 8.75rem;
+  height: 10rem;
   overflow: hidden;
   overflow-x: auto;
 }

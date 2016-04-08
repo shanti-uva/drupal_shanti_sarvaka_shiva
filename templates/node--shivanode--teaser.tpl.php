@@ -83,7 +83,7 @@
   <div class="shanti-thumbnail-image shanti-field-visuals <?php print "node-" . $node->nid; ?>">
     <a href="<?php print $node_url; ?>" class="shanti-thumbnail-link">
            <span class="overlay"><span class="icon"></span></span>
-           <img class="img-responsive" typeof="foaf:Image" 
+           <img typeof="foaf:Image" 
                     src="<?php print file_create_url($field_image['und'][0]['uri']); ?>" 
                     alt="<?php print $title; ?>" />     
            <span class="icon shanticon-visuals"></span>

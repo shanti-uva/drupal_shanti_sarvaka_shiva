@@ -1,18 +1,29 @@
-/***** Sarvaka Styles :: Custom Colors *******/
-.basebg, /* older class name, deprecated */
+/**
+* Mandala Visuals - Development
+* 
+* version 1.x - shanti-main-visuals.css
+* -----------------------------------------
+* University of Virginia / SHANTI MANDALA
+* -----------------------------------------
+* 
+*/
+
+/** 
+* Subtheme Colors 
+*/
+/* .basebg, older class name, deprecated */
 .titlearea, /* colored title banner */
 .thumbtype, /* thumbnail icon */
 .carousel-control, /* directional buttons */
 .breadcrumb .icon, /* arrow ofr breadcrumb path */
-/*.nav-justified>li.active,*/ /* large tabs juststified */
-.nav-justified>li.active a,
-.nav-justified>li.active a:hover,
-.nav-justified>li.active a:active,
+.navv-tabs.nav-justified>li.active a,
+.navv-tabs.nav-justified>li.active a:hover,
+.navv-tabs.nav-justified>li.active a:active,
 .shanti-thumbnail-image .icon {
   background-color: #5a9017 !important;
 }
 
-.basecolor, /* older class name, deprecated */
+/* .basecolor, older class name, deprecated */
 .navbar-brand:hover .site-slogan,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a:active .check-mark,
@@ -23,8 +34,7 @@
 .view-section .fancytree-container .fancytree-node:hover > .glyphicon,
 .view-section .fancytree-container .fancytree-node:active > .glyphicon,
 .view-section .fancytree-node.fancytree-active > .glyphicon,
-.view-section .fancytree-node.fancytree-selected > .glyphicon,
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google {
+.view-section .fancytree-node.fancytree-selected > .glyphicon {
   color: #5a9017 !important;
 }
 
@@ -32,15 +42,7 @@
   color: #444 !important;
 }
 
-.nav-justified>li.active,
-.view-section .nav-tabs>li.active>a, 
-.view-section .nav-tabs>li.active>a:hover, 
-.view-section .nav-tabs>li.active>a:active {
-  border-top-color: #5a9017;
-}
-
-.nav-justified>li.active::after {
-  border-color: #5a9017;
+.nav-tabs.nav-justified>li.active{
   border-top-color: #5a9017;
 }
 
@@ -52,7 +54,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .nav-justified>li.active::before {
+  .nav-tabs.nav-justified>li.active::before {
     color: #5a9017 !important;
   }
 }

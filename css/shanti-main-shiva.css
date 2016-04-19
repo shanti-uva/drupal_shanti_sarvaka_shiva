@@ -16,9 +16,7 @@
 .thumbtype, /* thumbnail icon */
 .carousel-control, /* directional buttons */
 .breadcrumb .icon, /* arrow ofr breadcrumb path */
-.navv-tabs.nav-justified>li.active a,
-.navv-tabs.nav-justified>li.active a:hover,
-.navv-tabs.nav-justified>li.active a:active,
+.nav-tabs.nav-justified>li.active,
 .shanti-thumbnail-image .icon {
   background-color: #5a9017 !important;
 }

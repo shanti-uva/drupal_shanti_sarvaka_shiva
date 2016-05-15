@@ -2,20 +2,17 @@
 * Mandala Visuals - Development
 * 
 * version 1.x - shanti-main-visuals.css
-* -----------------------------------------
-* University of Virginia / SHANTI MANDALA
-* -----------------------------------------
+* ---------------------------------------------------
+* University of Virginia / SHANTI MANDALA / VISUALS
+* ---------------------------------------------------
 * 
 */
 
-/** 
-* Subtheme Colors 
-*/
-/* .basebg, older class name, deprecated */
+/* BEGIN sub-theme colors */
 .titlearea, /* colored title banner */
-.thumbtype, /* thumbnail icon */
-.carousel-control, /* directional buttons */
-.breadcrumb .icon, /* arrow ofr breadcrumb path */
+.thumbtype, /* thumbnail icon ? this is not standard */
+/* .carousel-control,  this is not needed... */
+.breadcrumb .icon, /* arrow for breadcrumb path */
 .shanti-thumbnail-image .icon,
 .nav-tabs.nav-justified>li.active>a,
 .nav-tabs.nav-justified>li.active>a:focus,
@@ -58,7 +55,9 @@
     color: #5a9017 !important;
   }
 }
-/**** End of Custom Colors ****/
+/**
+* END Colors 
+*/
 
 .front .tab-pane.main-col > div:first-of-type{
   padding-bottom:0;

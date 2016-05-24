@@ -70,6 +70,10 @@
   margin: 0 auto !important;
 }
 
+.content-section.equal-height{
+  padding-bottom: 7rem;
+}
+
 .page-explore .main-col h1:nth-of-type(1), 
 .page-explore .main-col h2:nth-of-type(1), 
 .page-explore .main-col h3:nth-of-type(1) {

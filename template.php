@@ -115,10 +115,10 @@ function sarvaka_shiva_preprocess_shivanode(&$vars) {
 
         // Add link to source spreadsheet after group content access in details field group of full display
         if (isset($vars['content']['group_details']['group_content_access'])) {
-            $vars['content']['group_details']['group_content_access']['#suffix'] = '<div class="field field-name-shivanode-data-link field-type-link field-label-inline clearfix">
-                        <div class="field-label">' . t('Source Data:') . '&nbsp;</div>
-                        <div class="field-items">
-                            <div class="field-item even">' . $linktxt . '</div>
+            $vars['content']['group_details']['group_content_access']['#suffix'] = '<div class="field field-name-shivanode-data-link field-type-link field-label-span">
+                        <div class="field-label field-label-span">' . t('Source Data:') . '&nbsp;</div>
+                        <div class="field-items field-label-span">
+                            <div class="field-item field-label-span even">' . $linktxt . '</div>
                         </div>
                     </div>';
         }

@@ -1,10 +1,10 @@
 <div class="wrap-all">
    <span class="sr-only"><a href=".main-content">Skip to main content</a> <a href="#search-flyout">Skip to search</a></span>
     <!-- Header Region -->
-   <header class="header-banner">
+   <div class="site-banner">
     <div class="navbar navbar-default">
 
-	      <nav class="navbar-buttons" role="navigation">
+	      <nav class="navbar-buttons">
 	        <span class="menu-icon menu-toggle"><a href="#"><span class="sr-only">Main Menu</span><span class="icon shanticon-menu"></span></a></span><!-- desktop > 768 drilldown menu : main-menu -->
 	        <span class="menu-explore menu-exploretoggle"><a href="#"><span>Explore</span><span class="icon shanticon-directions"></span></a></span><!-- mobile < 768 : collections -->
 	      </nav>
@@ -23,7 +23,7 @@
 	      </h1>
 
 	      <!-- HEADER REGION -->
-	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop" role="navigation"> <!-- desktop display > 768 -->
+	      <nav id="sarvaka-header" class="region navbar-collapse collapse navtop"> <!-- desktop display > 768 -->
 	         <form class="form">
 	         <fieldset>
 	          <ul class="nav navbar-nav navbar-right">
@@ -37,26 +37,29 @@
      </div>
      <!-- include shanti-explore-menu if it exists -->
      <?php if(module_exists('explore_menu')) { print render($variables['explore_menu']); } ?>
-    </header>
+    </div>
 
 
     <!-- Begin Content Region -->
     <main class="main-wrapper container-fluid">
       <article class="main-content" role="main">
-        <div class="row">
+        <section class="row">
 
           <!-- Banner Region -->
-          <header class="titlearea banner<?php print $variables['banner_class']; ?>">
-           <div role="banner">
-            <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span class="page-title-text">
-            <?php
-            	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
-            		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
-            	} else {
-            		print ($title == '')? $variables['default_title']:$title;
-            	}
-              ?></span></h1>
-              <nav class="breadwrap" role="navigation" style="display:none;">
+          <div class="titlearea banner<?php print $variables['banner_class']; ?>">
+           <div>
+            <header role="banner">
+              <h1 class="page-title"><span class="icon shanticon-<?php print $variables['icon_class']; ?>"></span><span class="page-title-text">
+                <?php
+              	if(!empty($variables['default_title']) && !empty($variables['prefix_default_title'])) {
+              		print ($title == '')? $variables['default_title'] : $variables['default_title'] . ': ' . $title;
+              	} else {
+              		print ($title == '')? $variables['default_title']:$title;
+              	}
+                ?></span>
+              </h1>
+            </header> 
+              <nav class="breadwrap" style="display:none;">
                 <?php print theme('breadcrumb', array('breadcrumb' => $breadcrumb)); ?>
               </nav>
               <div class="banner-content">
@@ -69,13 +72,13 @@
                 ?>
               </div>
             </div>
-          </header>
+          </div>
 
-        </div> <!-- End of Banner Row -->
+        </section> <!-- End of Banner Row -->
 
 
         <!-- Begin Content Row -->
-        <div class="row row-offcanvas<?php print " $offcanvas_trigger_sb"; ?>">
+        <section class="row row-offcanvas<?php print " $offcanvas_trigger_sb"; ?>">
 
           <!-- Sidebar First Region -->
           <?php if ($page['sidebar_first']): ?>
@@ -135,9 +138,9 @@
               <?php print render($page['sidebar_second']); ?>
             </section>
           <?php endif; ?>
-        </div>
+        </section>
 
-        <a href="#" class="back-to-top"><span class="icon fa"></span></a>
+        <a href="#" class="back-to-top" role="button"><span class="icon fa"></span></a>
       </article>
 
 		  <!-- Search Flyout -->
@@ -153,7 +156,7 @@
 
   <!-- LOAD menus -->
   <section id="menu" class="menu-main" style="display:none;">
-    <nav id="menu-drill" role="navigation">
+    <nav id="menu-drill">
      <?php print $variables['user_menu_links']; ?>
     </nav>
   </section><!-- END menu -->

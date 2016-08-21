@@ -136,14 +136,14 @@
   margin: 1.25rem auto;
 }
 
-.shanti-thumbnail-image .icon {
+.shanti-thumbnail-image .icon.shanticon-visuals {
   filter: alpha(opacity=60);
   opacity: 0.6;
 
-  width: 1.83em;
-  height: 1.68em;
+  width: 1.75em;
+  height: 1.62em;
   font-size: 1.38em;
-  line-height: 1.68em;
+  line-height: 1.62em;
 }
 
 .page-explore .shanti-thumbnail-image .icon {
